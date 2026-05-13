@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "GLOBAL_RST",
+					"strict" : false
+				},
+				{
+					"name" : "R_VGA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R_VGA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R_VGA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R_VGA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R_VGA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "G_VGA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "G_VGA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "G_VGA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "G_VGA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "G_VGA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "G_VGA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "B_VGA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B_VGA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B_VGA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B_VGA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B_VGA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_HS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_RST",
+					"strict" : false
+				},
+				{
+					"name" : "POKE0_SEL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "POKE0_SEL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "POKE0_SEL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "POKE0_SEL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "POKE0_ENA",
+					"strict" : false
+				},
+				{
+					"name" : "POKE1_SEL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "POKE1_SEL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "POKE1_SEL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "POKE1_SEL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "POKE1_ENA",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_CONTROLLER",
+					"strict" : false
+				},
+				{
+					"name" : "PK0_ANIM_SIG",
+					"strict" : false
+				},
+				{
+					"name" : "PK1_ANIM_SIG",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

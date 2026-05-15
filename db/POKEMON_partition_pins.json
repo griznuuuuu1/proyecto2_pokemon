@@ -4,7 +4,11 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "GLOBAL_RST",
+					"name" : "P0_RDY",
+					"strict" : false
+				},
+				{
+					"name" : "P1_RDY",
 					"strict" : false
 				},
 				{
@@ -80,59 +84,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "VGA_RST",
+					"name" : "SELECT_SIG",
 					"strict" : false
 				},
 				{
-					"name" : "POKE0_SEL[3]",
+					"name" : "IN_RST",
 					"strict" : false
 				},
 				{
-					"name" : "POKE0_SEL[2]",
+					"name" : "UP_SIG",
 					"strict" : false
 				},
 				{
-					"name" : "POKE0_SEL[1]",
-					"strict" : false
-				},
-				{
-					"name" : "POKE0_SEL[0]",
-					"strict" : false
-				},
-				{
-					"name" : "POKE0_ENA",
-					"strict" : false
-				},
-				{
-					"name" : "POKE1_SEL[3]",
-					"strict" : false
-				},
-				{
-					"name" : "POKE1_SEL[2]",
-					"strict" : false
-				},
-				{
-					"name" : "POKE1_SEL[1]",
-					"strict" : false
-				},
-				{
-					"name" : "POKE1_SEL[0]",
-					"strict" : false
-				},
-				{
-					"name" : "POKE1_ENA",
-					"strict" : false
-				},
-				{
-					"name" : "STATE_CONTROLLER",
-					"strict" : false
-				},
-				{
-					"name" : "PK0_ANIM_SIG",
-					"strict" : false
-				},
-				{
-					"name" : "PK1_ANIM_SIG",
+					"name" : "DOWN_SIG",
 					"strict" : false
 				}
 			]

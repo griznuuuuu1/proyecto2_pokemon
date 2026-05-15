@@ -1,4 +1,41 @@
-|VGA
+|POKEMON
+IN_CLK => vga:IMAGE_CONTROL.CLK
+IN_RST => vga:IMAGE_CONTROL.VGA_RST
+UP_SIG => battle_engine:GAME_CONTROL.UP_SIG
+DOWN_SIG => battle_engine:GAME_CONTROL.DOWN_SIG
+SELECT_SIG => battle_engine:GAME_CONTROL.SELECT_SIG
+P0_RDY <= battle_engine:GAME_CONTROL.P0_READY_SIG
+P1_RDY <= battle_engine:GAME_CONTROL.P1_READY_SIG
+OUT_VGA_CLK <= vga:IMAGE_CONTROL.VGA_CLK
+R_VGA[0] <= vga:IMAGE_CONTROL.R_VGA[0]
+R_VGA[1] <= vga:IMAGE_CONTROL.R_VGA[1]
+R_VGA[2] <= vga:IMAGE_CONTROL.R_VGA[2]
+R_VGA[3] <= vga:IMAGE_CONTROL.R_VGA[3]
+R_VGA[4] <= vga:IMAGE_CONTROL.R_VGA[4]
+R_VGA[5] <= vga:IMAGE_CONTROL.R_VGA[5]
+R_VGA[6] <= vga:IMAGE_CONTROL.R_VGA[6]
+R_VGA[7] <= vga:IMAGE_CONTROL.R_VGA[7]
+G_VGA[0] <= vga:IMAGE_CONTROL.G_VGA[0]
+G_VGA[1] <= vga:IMAGE_CONTROL.G_VGA[1]
+G_VGA[2] <= vga:IMAGE_CONTROL.G_VGA[2]
+G_VGA[3] <= vga:IMAGE_CONTROL.G_VGA[3]
+G_VGA[4] <= vga:IMAGE_CONTROL.G_VGA[4]
+G_VGA[5] <= vga:IMAGE_CONTROL.G_VGA[5]
+G_VGA[6] <= vga:IMAGE_CONTROL.G_VGA[6]
+G_VGA[7] <= vga:IMAGE_CONTROL.G_VGA[7]
+B_VGA[0] <= vga:IMAGE_CONTROL.B_VGA[0]
+B_VGA[1] <= vga:IMAGE_CONTROL.B_VGA[1]
+B_VGA[2] <= vga:IMAGE_CONTROL.B_VGA[2]
+B_VGA[3] <= vga:IMAGE_CONTROL.B_VGA[3]
+B_VGA[4] <= vga:IMAGE_CONTROL.B_VGA[4]
+B_VGA[5] <= vga:IMAGE_CONTROL.B_VGA[5]
+B_VGA[6] <= vga:IMAGE_CONTROL.B_VGA[6]
+B_VGA[7] <= vga:IMAGE_CONTROL.B_VGA[7]
+VGA_HS <= vga:IMAGE_CONTROL.VGA_HS
+VGA_VS <= vga:IMAGE_CONTROL.VGA_VS
+
+
+|POKEMON|VGA:IMAGE_CONTROL
 CLK => pll_40mhz:CLOCK_BLOCK.refclk
 VGA_RST => GLB_RST.IN1
 VGA_RST => pll_40mhz:CLOCK_BLOCK.rst
@@ -45,7 +82,7 @@ VGA_HS <= image_sync:SYNC_BLOCK.H_SYNC
 VGA_VS <= image_sync:SYNC_BLOCK.V_SYNC
 
 
-|VGA|move_controller:MOVE_CONT
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT
 CLK => contador_uni:REFRESH_C0.clk
 CLK => VARP1_Y[0].CLK
 CLK => VARP1_Y[1].CLK
@@ -254,7 +291,7 @@ SP1_Y[9] <= VARP1_Y[9].DB_MAX_OUTPUT_PORT_TYPE
 SP1_Y[10] <= VARP1_Y[10].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|contador_uni:REFRESH_C0
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C0
 clk => temp[0].CLK
 clk => temp[1].CLK
 clk => temp[2].CLK
@@ -417,7 +454,7 @@ counter[20] <= temp[20].DB_MAX_OUTPUT_PORT_TYPE
 counter[21] <= temp[21].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|contador_uni:REFRESH_C1
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C1
 clk => temp[0].CLK
 clk => temp[1].CLK
 clk => temp[2].CLK
@@ -580,7 +617,7 @@ counter[20] <= temp[20].DB_MAX_OUTPUT_PORT_TYPE
 counter[21] <= temp[21].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM
 A[0] => bit1_fulladder:fullAdder0.A
 A[1] => bit1_fulladder:fullAdderLoop:1:fullAdder_i.A
 A[2] => bit1_fulladder:fullAdderLoop:2:fullAdder_i.A
@@ -618,7 +655,7 @@ S[9] <= bit1_fulladder:fullAdderLoop:9:fullAdder_i.S
 S[10] <= bit1_fulladder:fullAdderLoop:10:fullAdder_i.S
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:fullAdder0
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:fullAdder0
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -629,7 +666,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -640,7 +677,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -651,7 +688,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -662,7 +699,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:4:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:4:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -673,7 +710,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:5:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:5:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -684,7 +721,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:6:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:6:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -695,7 +732,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:7:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:7:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -706,7 +743,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:8:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:8:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -717,7 +754,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -728,7 +765,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:10:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM|bit1_fullAdder:\fullAdderLoop:10:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -739,7 +776,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM
 A[0] => bit1_fulladder:fullAdder0.A
 A[1] => bit1_fulladder:fullAdderLoop:1:fullAdder_i.A
 A[2] => bit1_fulladder:fullAdderLoop:2:fullAdder_i.A
@@ -777,7 +814,7 @@ S[9] <= bit1_fulladder:fullAdderLoop:9:fullAdder_i.S
 S[10] <= bit1_fulladder:fullAdderLoop:10:fullAdder_i.S
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:fullAdder0
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:fullAdder0
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -788,7 +825,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -799,7 +836,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -810,7 +847,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -821,7 +858,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:4:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:4:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -832,7 +869,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:5:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:5:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -843,7 +880,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:6:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:6:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -854,7 +891,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:7:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:7:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -865,7 +902,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:8:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:8:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -876,7 +913,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -887,7 +924,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:10:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM|bit1_fullAdder:\fullAdderLoop:10:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -898,7 +935,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM
 A[0] => bit1_fulladder:fullAdder0.A
 A[1] => bit1_fulladder:fullAdderLoop:1:fullAdder_i.A
 A[2] => bit1_fulladder:fullAdderLoop:2:fullAdder_i.A
@@ -936,7 +973,7 @@ S[9] <= bit1_fulladder:fullAdderLoop:9:fullAdder_i.S
 S[10] <= bit1_fulladder:fullAdderLoop:10:fullAdder_i.S
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:fullAdder0
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:fullAdder0
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -947,7 +984,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -958,7 +995,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -969,7 +1006,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -980,7 +1017,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:4:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:4:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -991,7 +1028,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:5:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:5:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1002,7 +1039,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:6:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:6:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1013,7 +1050,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:7:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:7:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1024,7 +1061,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:8:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:8:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1035,7 +1072,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1046,7 +1083,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:10:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM|bit1_fullAdder:\fullAdderLoop:10:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1057,7 +1094,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM
 A[0] => bit1_fulladder:fullAdder0.A
 A[1] => bit1_fulladder:fullAdderLoop:1:fullAdder_i.A
 A[2] => bit1_fulladder:fullAdderLoop:2:fullAdder_i.A
@@ -1095,7 +1132,7 @@ S[9] <= bit1_fulladder:fullAdderLoop:9:fullAdder_i.S
 S[10] <= bit1_fulladder:fullAdderLoop:10:fullAdder_i.S
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:fullAdder0
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:fullAdder0
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1106,7 +1143,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1117,7 +1154,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1128,7 +1165,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1139,7 +1176,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:4:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:4:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1150,7 +1187,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:5:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:5:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1161,7 +1198,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:6:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:6:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1172,7 +1209,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:7:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:7:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1183,7 +1220,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:8:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:8:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1194,7 +1231,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1205,7 +1242,7 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:10:fullAdder_i
+|POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:10:fullAdder_i
 A => Mux0.IN8
 A => Mux1.IN8
 B => Mux0.IN9
@@ -1216,21 +1253,21 @@ S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|PLL_40MHz:CLOCK_BLOCK
+|POKEMON|VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK
 refclk => PLL_40MHz_0002:pll_40mhz_inst.refclk
 rst => PLL_40MHz_0002:pll_40mhz_inst.rst
 outclk_0 <= PLL_40MHz_0002:pll_40mhz_inst.outclk_0
 locked <= PLL_40MHz_0002:pll_40mhz_inst.locked
 
 
-|VGA|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst
+|POKEMON|VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= altera_pll:altera_pll_i.outclk
 locked <= altera_pll:altera_pll_i.locked
 
 
-|VGA|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst|altera_pll:altera_pll_i
+|POKEMON|VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst|altera_pll:altera_pll_i
 refclk => general[0].gpll.I_REFCLK
 refclk1 => ~NO_FANOUT~
 fbclk => ~NO_FANOUT~
@@ -1402,7 +1439,7 @@ cascade_out[0] <= <GND>
 zdbfbclk <> <GND>
 
 
-|VGA|image_sync:SYNC_BLOCK
+|POKEMON|VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK
 RESET => contador_uni:H_COUNTER.rst
 RESET => contador_uni:V_COUNTER.rst
 SYNC_CLK => contador_uni:H_COUNTER.clk
@@ -1434,7 +1471,7 @@ PIXEL_Y[9] <= PIXEL_Y.DB_MAX_OUTPUT_PORT_TYPE
 PIXEL_Y[10] <= PIXEL_Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|image_sync:SYNC_BLOCK|contador_uni:H_COUNTER
+|POKEMON|VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:H_COUNTER
 clk => temp[0].CLK
 clk => temp[1].CLK
 clk => temp[2].CLK
@@ -1520,7 +1557,7 @@ counter[9] <= temp[9].DB_MAX_OUTPUT_PORT_TYPE
 counter[10] <= temp[10].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER
+|POKEMON|VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER
 clk => temp[0].CLK
 clk => temp[1].CLK
 clk => temp[2].CLK
@@ -1606,7 +1643,7 @@ counter[9] <= temp[9].DB_MAX_OUTPUT_PORT_TYPE
 counter[10] <= temp[10].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|pixel_generate:COLOR_BLOCK
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK
 CLK => pokemon_sel:PK_SEL.CLK
 CLK => B[0]~reg0.CLK
 CLK => B[1]~reg0.CLK
@@ -2253,7 +2290,7 @@ B[6] <= B[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 B[7] <= B[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL
 CLK => leafeon_rom:LEAFEON_SP.clock
 CLK => zeraora_rom:ZERAORA_SP.clock
 CLK => vaporeon_rom:VAPOREON_SP.clock
@@ -3771,7 +3808,7 @@ PIXEL_PK1[14] <= Mux281.DB_MAX_OUTPUT_PORT_TYPE
 PIXEL_PK1[15] <= Mux280.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -3831,7 +3868,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -3941,7 +3978,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component|altsyncram_5224:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component|altsyncram_5224:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4408,7 +4445,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -4468,7 +4505,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -4578,7 +4615,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component|altsyncram_v224:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component|altsyncram_v224:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -5045,7 +5082,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -5105,7 +5142,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -5215,7 +5252,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP|altsyncram:altsyncram_component|altsyncram_l624:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP|altsyncram:altsyncram_component|altsyncram_l624:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -5682,7 +5719,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -5742,7 +5779,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -5852,7 +5889,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP|altsyncram:altsyncram_component|altsyncram_c924:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP|altsyncram:altsyncram_component|altsyncram_c924:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -6319,7 +6356,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -6379,7 +6416,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -6489,7 +6526,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP|altsyncram:altsyncram_component|altsyncram_6v14:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP|altsyncram:altsyncram_component|altsyncram_6v14:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -6956,7 +6993,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -7016,7 +7053,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -7126,7 +7163,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP|altsyncram:altsyncram_component|altsyncram_ev14:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP|altsyncram:altsyncram_component|altsyncram_ev14:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -7593,7 +7630,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -7653,7 +7690,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -7763,7 +7800,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP|altsyncram:altsyncram_component|altsyncram_6324:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP|altsyncram:altsyncram_component|altsyncram_6324:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -8230,7 +8267,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -8290,7 +8327,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -8400,7 +8437,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP|altsyncram:altsyncram_component|altsyncram_s524:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP|altsyncram:altsyncram_component|altsyncram_s524:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -8867,7 +8904,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -8927,7 +8964,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -9037,7 +9074,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component|altsyncram_i224:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component|altsyncram_i224:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -9504,7 +9541,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -9564,7 +9601,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -9674,7 +9711,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component|altsyncram_3924:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component|altsyncram_3924:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -10141,7 +10178,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP
 address_a[0] => altsyncram:altsyncram_component.address_a[0]
 address_a[1] => altsyncram:altsyncram_component.address_a[1]
 address_a[2] => altsyncram:altsyncram_component.address_a[2]
@@ -10201,7 +10238,7 @@ q_b[14] <= altsyncram:altsyncram_component.q_b[14]
 q_b[15] <= altsyncram:altsyncram_component.q_b[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -10311,7 +10348,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component|altsyncram_cv14:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component|altsyncram_cv14:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -10778,7 +10815,7 @@ q_b[14] <= ram_block1a14.PORTBDATAOUT
 q_b[15] <= ram_block1a15.PORTBDATAOUT
 
 
-|VGA|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -10813,7 +10850,7 @@ q[14] <= altsyncram:altsyncram_component.q_a[14]
 q[15] <= altsyncram:altsyncram_component.q_a[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -10885,7 +10922,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|VGA|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -11808,7 +11845,7 @@ q_a[14] <= mux_7hb:mux2.result[14]
 q_a[15] <= mux_7hb:mux2.result[15]
 
 
-|VGA|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated|decode_11a:rden_decode
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated|decode_11a:rden_decode
 data[0] => w_anode270w[1].IN0
 data[0] => w_anode284w[1].IN1
 data[0] => w_anode293w[1].IN0
@@ -11823,7 +11860,7 @@ eq[2] <= w_anode293w[2].DB_MAX_OUTPUT_PORT_TYPE
 eq[3] <= w_anode302w[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|VGA|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated|mux_7hb:mux2
+|POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated|mux_7hb:mux2
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -12000,5 +12037,222 @@ sel[1] => l2_w8_n0_mux_dataout.IN0
 sel[1] => _.IN0
 sel[1] => l2_w9_n0_mux_dataout.IN0
 sel[1] => _.IN0
+
+
+|POKEMON|battle_engine:GAME_CONTROL
+CLK => SELECTED_PK1[0].CLK
+CLK => SELECTED_PK1[1].CLK
+CLK => SELECTED_PK1[2].CLK
+CLK => SELECTED_PK1[3].CLK
+CLK => SELECTED_PK0[0].CLK
+CLK => SELECTED_PK0[1].CLK
+CLK => SELECTED_PK0[2].CLK
+CLK => SELECTED_PK0[3].CLK
+CLK => PK1_ENA~reg0.CLK
+CLK => PK0_ENA~reg0.CLK
+CLK => P1_READY.CLK
+CLK => P0_READY.CLK
+CLK => TURN_CONTROLLER.CLK
+CLK => STATE_CONTROL~reg0.CLK
+CLK => CURSOR_PK1[0].CLK
+CLK => CURSOR_PK1[1].CLK
+CLK => CURSOR_PK1[2].CLK
+CLK => CURSOR_PK1[3].CLK
+CLK => CURSOR_PK0[0].CLK
+CLK => CURSOR_PK0[1].CLK
+CLK => CURSOR_PK0[2].CLK
+CLK => CURSOR_PK0[3].CLK
+CLK => REG_D_SIG.CLK
+CLK => REG_U_SIG.CLK
+CLK => CURRENT_ST~6.DATAIN
+RST => P1_READY.ACLR
+RST => P0_READY.ACLR
+RST => TURN_CONTROLLER.ACLR
+RST => STATE_CONTROL~reg0.ACLR
+RST => CURSOR_PK1[0].ACLR
+RST => CURSOR_PK1[1].ACLR
+RST => CURSOR_PK1[2].ACLR
+RST => CURSOR_PK1[3].ACLR
+RST => CURSOR_PK0[0].ACLR
+RST => CURSOR_PK0[1].ACLR
+RST => CURSOR_PK0[2].ACLR
+RST => CURSOR_PK0[3].ACLR
+RST => REG_D_SIG.ACLR
+RST => REG_U_SIG.ACLR
+RST => CURRENT_ST~8.DATAIN
+RST => SELECTED_PK1[0].ENA
+RST => PK0_ENA~reg0.ENA
+RST => PK1_ENA~reg0.ENA
+RST => SELECTED_PK0[3].ENA
+RST => SELECTED_PK0[2].ENA
+RST => SELECTED_PK0[1].ENA
+RST => SELECTED_PK0[0].ENA
+RST => SELECTED_PK1[3].ENA
+RST => SELECTED_PK1[2].ENA
+RST => SELECTED_PK1[1].ENA
+UP_SIG => U_SIG.IN1
+UP_SIG => REG_U_SIG.DATAIN
+DOWN_SIG => D_SIG.IN1
+DOWN_SIG => REG_D_SIG.DATAIN
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => P0_READY.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => SELECTED_PK0.OUTPUTSELECT
+SELECT_SIG => SELECTED_PK0.OUTPUTSELECT
+SELECT_SIG => SELECTED_PK0.OUTPUTSELECT
+SELECT_SIG => SELECTED_PK0.OUTPUTSELECT
+SELECT_SIG => P1_READY.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => CURRENT_ST.OUTPUTSELECT
+SELECT_SIG => SELECTED_PK1.OUTPUTSELECT
+SELECT_SIG => SELECTED_PK1.OUTPUTSELECT
+SELECT_SIG => SELECTED_PK1.OUTPUTSELECT
+SELECT_SIG => SELECTED_PK1.OUTPUTSELECT
+STATE_CONTROL <= STATE_CONTROL~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TURN_DEFINITION <= TURN_CONTROLLER.DB_MAX_OUTPUT_PORT_TYPE
+PK0_SELECTOR[0] <= PK0_SELECTOR.DB_MAX_OUTPUT_PORT_TYPE
+PK0_SELECTOR[1] <= PK0_SELECTOR.DB_MAX_OUTPUT_PORT_TYPE
+PK0_SELECTOR[2] <= PK0_SELECTOR.DB_MAX_OUTPUT_PORT_TYPE
+PK0_SELECTOR[3] <= PK0_SELECTOR.DB_MAX_OUTPUT_PORT_TYPE
+PK1_SELECTOR[0] <= PK1_SELECTOR.DB_MAX_OUTPUT_PORT_TYPE
+PK1_SELECTOR[1] <= PK1_SELECTOR.DB_MAX_OUTPUT_PORT_TYPE
+PK1_SELECTOR[2] <= PK1_SELECTOR.DB_MAX_OUTPUT_PORT_TYPE
+PK1_SELECTOR[3] <= PK1_SELECTOR.DB_MAX_OUTPUT_PORT_TYPE
+PK0_ENA <= PK0_ENA~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PK1_ENA <= PK1_ENA~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P0_READY_SIG <= P0_READY.DB_MAX_OUTPUT_PORT_TYPE
+P1_READY_SIG <= P1_READY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM
+A[0] => bit1_fulladder:fullAdder0.A
+A[1] => bit1_fulladder:fullAdderLoop:1:fullAdder_i.A
+A[2] => bit1_fulladder:fullAdderLoop:2:fullAdder_i.A
+A[3] => bit1_fulladder:fullAdderLoop:3:fullAdder_i.A
+B[0] => bit1_fulladder:fullAdder0.B
+B[1] => bit1_fulladder:fullAdderLoop:1:fullAdder_i.B
+B[2] => bit1_fulladder:fullAdderLoop:2:fullAdder_i.B
+B[3] => bit1_fulladder:fullAdderLoop:3:fullAdder_i.B
+Cin => bit1_fulladder:fullAdder0.Cin
+Cout <= bit1_fulladder:fullAdderLoop:3:fullAdder_i.Cout
+S[0] <= bit1_fulladder:fullAdder0.S
+S[1] <= bit1_fulladder:fullAdderLoop:1:fullAdder_i.S
+S[2] <= bit1_fulladder:fullAdderLoop:2:fullAdder_i.S
+S[3] <= bit1_fulladder:fullAdderLoop:3:fullAdder_i.S
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM|bit1_fullAdder:fullAdder0
+A => Mux0.IN8
+A => Mux1.IN8
+B => Mux0.IN9
+B => Mux1.IN9
+Cin => Mux0.IN10
+Cin => Mux1.IN10
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
+A => Mux0.IN8
+A => Mux1.IN8
+B => Mux0.IN9
+B => Mux1.IN9
+Cin => Mux0.IN10
+Cin => Mux1.IN10
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
+A => Mux0.IN8
+A => Mux1.IN8
+B => Mux0.IN9
+B => Mux1.IN9
+Cin => Mux0.IN10
+Cin => Mux1.IN10
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
+A => Mux0.IN8
+A => Mux1.IN8
+B => Mux0.IN9
+B => Mux1.IN9
+Cin => Mux0.IN10
+Cin => Mux1.IN10
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM
+A[0] => bit1_fulladder:fullAdder0.A
+A[1] => bit1_fulladder:fullAdderLoop:1:fullAdder_i.A
+A[2] => bit1_fulladder:fullAdderLoop:2:fullAdder_i.A
+A[3] => bit1_fulladder:fullAdderLoop:3:fullAdder_i.A
+B[0] => bit1_fulladder:fullAdder0.B
+B[1] => bit1_fulladder:fullAdderLoop:1:fullAdder_i.B
+B[2] => bit1_fulladder:fullAdderLoop:2:fullAdder_i.B
+B[3] => bit1_fulladder:fullAdderLoop:3:fullAdder_i.B
+Cin => bit1_fulladder:fullAdder0.Cin
+Cout <= bit1_fulladder:fullAdderLoop:3:fullAdder_i.Cout
+S[0] <= bit1_fulladder:fullAdder0.S
+S[1] <= bit1_fulladder:fullAdderLoop:1:fullAdder_i.S
+S[2] <= bit1_fulladder:fullAdderLoop:2:fullAdder_i.S
+S[3] <= bit1_fulladder:fullAdderLoop:3:fullAdder_i.S
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM|bit1_fullAdder:fullAdder0
+A => Mux0.IN8
+A => Mux1.IN8
+B => Mux0.IN9
+B => Mux1.IN9
+Cin => Mux0.IN10
+Cin => Mux1.IN10
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM|bit1_fullAdder:\fullAdderLoop:1:fullAdder_i
+A => Mux0.IN8
+A => Mux1.IN8
+B => Mux0.IN9
+B => Mux1.IN9
+Cin => Mux0.IN10
+Cin => Mux1.IN10
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM|bit1_fullAdder:\fullAdderLoop:2:fullAdder_i
+A => Mux0.IN8
+A => Mux1.IN8
+B => Mux0.IN9
+B => Mux1.IN9
+Cin => Mux0.IN10
+Cin => Mux1.IN10
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM|bit1_fullAdder:\fullAdderLoop:3:fullAdder_i
+A => Mux0.IN8
+A => Mux1.IN8
+B => Mux0.IN9
+B => Mux1.IN9
+Cin => Mux0.IN10
+Cin => Mux1.IN10
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 
 

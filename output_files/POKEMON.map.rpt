@@ -1,5 +1,5 @@
 Analysis & Synthesis report for POKEMON
-Thu May 14 11:38:35 2026
+Mon Jun  1 18:31:26 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -32,48 +32,50 @@ Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
  24. Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component|altsyncram_i224:auto_generated
  25. Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component|altsyncram_3924:auto_generated
  26. Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component|altsyncram_cv14:auto_generated
- 27. Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated
- 28. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C0
- 29. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C1
- 30. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM
- 31. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM
- 32. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM
- 33. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM
- 34. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst|altera_pll:altera_pll_i
- 35. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:H_COUNTER
- 36. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER
- 37. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component
- 38. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component
- 39. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP|altsyncram:altsyncram_component
- 40. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP|altsyncram:altsyncram_component
- 41. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP|altsyncram:altsyncram_component
- 42. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP|altsyncram:altsyncram_component
- 43. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP|altsyncram:altsyncram_component
- 44. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP|altsyncram:altsyncram_component
- 45. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component
- 46. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component
- 47. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component
- 48. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component
- 49. Parameter Settings for User Entity Instance: battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM
- 50. Parameter Settings for User Entity Instance: battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM
- 51. Parameter Settings for Inferred Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0
- 52. Parameter Settings for Inferred Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div1
- 53. altsyncram Parameter Settings by Entity Instance
- 54. Port Connectivity Checks: "battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM"
- 55. Port Connectivity Checks: "battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM"
- 56. Port Connectivity Checks: "battle_engine:GAME_CONTROL"
- 57. Port Connectivity Checks: "VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER"
- 58. Port Connectivity Checks: "VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:H_COUNTER"
- 59. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM"
- 60. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM"
- 61. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM"
- 62. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM"
- 63. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C1"
- 64. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C0"
- 65. Port Connectivity Checks: "VGA:IMAGE_CONTROL"
- 66. Post-Synthesis Netlist Statistics for Top Partition
- 67. Elapsed Time Per Partition
- 68. Analysis & Synthesis Messages
+ 27. Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_u934:auto_generated
+ 28. Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_qo34:auto_generated
+ 29. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C0
+ 30. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C1
+ 31. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM
+ 32. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM
+ 33. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM
+ 34. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM
+ 35. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst|altera_pll:altera_pll_i
+ 36. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:H_COUNTER
+ 37. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER
+ 38. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component
+ 39. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component
+ 40. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP|altsyncram:altsyncram_component
+ 41. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP|altsyncram:altsyncram_component
+ 42. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP|altsyncram:altsyncram_component
+ 43. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP|altsyncram:altsyncram_component
+ 44. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP|altsyncram:altsyncram_component
+ 45. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP|altsyncram:altsyncram_component
+ 46. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component
+ 47. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component
+ 48. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component
+ 49. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component
+ 50. Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component
+ 51. Parameter Settings for User Entity Instance: battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM
+ 52. Parameter Settings for User Entity Instance: battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM
+ 53. Parameter Settings for Inferred Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0
+ 54. Parameter Settings for Inferred Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div1
+ 55. altsyncram Parameter Settings by Entity Instance
+ 56. Port Connectivity Checks: "battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM"
+ 57. Port Connectivity Checks: "battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM"
+ 58. Port Connectivity Checks: "battle_engine:GAME_CONTROL"
+ 59. Port Connectivity Checks: "VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER"
+ 60. Port Connectivity Checks: "VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:H_COUNTER"
+ 61. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM"
+ 62. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_X_SUM"
+ 63. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_Y_SUM"
+ 64. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS0_X_SUM"
+ 65. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C1"
+ 66. Port Connectivity Checks: "VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C0"
+ 67. Port Connectivity Checks: "VGA:IMAGE_CONTROL"
+ 68. Post-Synthesis Netlist Statistics for Top Partition
+ 69. Elapsed Time Per Partition
+ 70. Analysis & Synthesis Messages
 
 
 
@@ -100,16 +102,16 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 14 11:38:35 2026           ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun  1 18:31:26 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; POKEMON                                         ;
 ; Top-level Entity Name           ; POKEMON                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 553                                             ;
+; Total registers                 ; 827                                             ;
 ; Total pins                      ; 34                                              ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 1,245,184                                       ;
+; Total block memory bits         ; 1,769,472                                       ;
 ; Total DSP Blocks                ; 0                                               ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
@@ -220,88 +222,91 @@ on the Quartus Prime software download page.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
-+----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------+-----------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                     ; Library   ;
-+----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------+-----------+
-; POKEMON.vhd                      ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd                ;           ;
-; battle_engine.vhd                ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/battle_engine.vhd          ;           ;
-; BACKGROUND_ROM.vhd               ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/BACKGROUND_ROM.vhd         ;           ;
-; CHARIZARD_ROM.vhd                ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/CHARIZARD_ROM.vhd          ;           ;
-; FLAREON_ROM.vhd                  ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/FLAREON_ROM.vhd            ;           ;
-; GARCHOMP_ROM.vhd                 ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/GARCHOMP_ROM.vhd           ;           ;
-; JOLTEON_ROM.vhd                  ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/JOLTEON_ROM.vhd            ;           ;
-; LAPRAS_ROM.vhd                   ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/LAPRAS_ROM.vhd             ;           ;
-; LEAFEON_ROM.vhd                  ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/LEAFEON_ROM.vhd            ;           ;
-; ODDISH_ROM.vhd                   ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/ODDISH_ROM.vhd             ;           ;
-; PLL_40MHz.vhd                    ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/PLL_40MHz.vhd              ; PLL_40MHz ;
-; PLL_40MHz/PLL_40MHz_0002.v       ; yes             ; User Verilog HDL File                  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/PLL_40MHz/PLL_40MHz_0002.v ; PLL_40MHz ;
-; RANDOM_ROM.vhd                   ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/RANDOM_ROM.vhd             ;           ;
-; SANDSLASH_ROM.vhd                ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/SANDSLASH_ROM.vhd          ;           ;
-; VAPOREON_ROM.vhd                 ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/VAPOREON_ROM.vhd           ;           ;
-; ZERAORA_ROM.vhd                  ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/ZERAORA_ROM.vhd            ;           ;
-; VGA.vhd                          ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/VGA.vhd                    ;           ;
-; VGA_package.vhd                  ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/VGA_package.vhd            ;           ;
-; basic_package.vhd                ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/basic_package.vhd          ;           ;
-; bit1_fullAdder.vhd               ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/bit1_fullAdder.vhd         ;           ;
-; bitn_fullAdder.vhd               ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/bitn_fullAdder.vhd         ;           ;
-; contador_uni.vhd                 ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/contador_uni.vhd           ;           ;
-; image_sync.vhd                   ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/image_sync.vhd             ;           ;
-; move_controller.vhd              ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/move_controller.vhd        ;           ;
-; pixel_generate.vhd               ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd         ;           ;
-; pokemon_sel.vhd                  ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pokemon_sel.vhd            ;           ;
-; altera_pll.v                     ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altera_pll.v                                 ;           ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altsyncram.tdf                               ;           ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/stratix_ram_block.inc                        ;           ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/lpm_mux.inc                                  ;           ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/lpm_decode.inc                               ;           ;
-; aglobal251.inc                   ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/aglobal251.inc                               ;           ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/a_rdenreg.inc                                ;           ;
-; altrom.inc                       ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altrom.inc                                   ;           ;
-; altram.inc                       ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altram.inc                                   ;           ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altdpram.inc                                 ;           ;
-; db/altsyncram_5224.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_5224.tdf     ;           ;
-; sprite_mifs/leafeon.mif          ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/leafeon.mif    ;           ;
-; db/altsyncram_v224.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_v224.tdf     ;           ;
-; sprite_mifs/zeraora.mif          ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/zeraora.mif    ;           ;
-; db/altsyncram_l624.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_l624.tdf     ;           ;
-; sprite_mifs/vaporeon.mif         ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/vaporeon.mif   ;           ;
-; db/altsyncram_c924.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_c924.tdf     ;           ;
-; sprite_mifs/sandslash.mif        ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/sandslash.mif  ;           ;
-; db/altsyncram_6v14.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_6v14.tdf     ;           ;
-; sprite_mifs/oddish.mif           ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/oddish.mif     ;           ;
-; db/altsyncram_ev14.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_ev14.tdf     ;           ;
-; sprite_mifs/lapras.mif           ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/lapras.mif     ;           ;
-; db/altsyncram_6324.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_6324.tdf     ;           ;
-; sprite_mifs/jolteon.mif          ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/jolteon.mif    ;           ;
-; db/altsyncram_s524.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_s524.tdf     ;           ;
-; sprite_mifs/garchomp.mif         ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/garchomp.mif   ;           ;
-; db/altsyncram_i224.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_i224.tdf     ;           ;
-; sprite_mifs/flareon.mif          ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/flareon.mif    ;           ;
-; db/altsyncram_3924.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_3924.tdf     ;           ;
-; sprite_mifs/charizard.mif        ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/charizard.mif  ;           ;
-; db/altsyncram_cv14.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_cv14.tdf     ;           ;
-; sprite_mifs/random.mif           ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/random.mif     ;           ;
-; db/altsyncram_cb34.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_cb34.tdf     ;           ;
-; sprite_mifs/background.mif       ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/background.mif ;           ;
-; db/decode_11a.tdf                ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/decode_11a.tdf          ;           ;
-; db/mux_7hb.tdf                   ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/mux_7hb.tdf             ;           ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/lpm_divide.tdf                               ;           ;
-; abs_divider.inc                  ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/abs_divider.inc                              ;           ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/sign_div_unsign.inc                          ;           ;
-; db/lpm_divide_apo.tdf            ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/lpm_divide_apo.tdf      ;           ;
-; db/abs_divider_jbg.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/abs_divider_jbg.tdf     ;           ;
-; db/alt_u_div_mve.tdf             ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/alt_u_div_mve.tdf       ;           ;
-; db/lpm_abs_jn9.tdf               ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/lpm_abs_jn9.tdf         ;           ;
-; db/lpm_abs_4p9.tdf               ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/lpm_abs_4p9.tdf         ;           ;
-+----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------+-----------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+-----------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                         ; Library   ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+-----------+
+; POKEMON.vhd                      ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd                    ;           ;
+; battle_engine.vhd                ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/battle_engine.vhd              ;           ;
+; BACKGROUND_ROM.vhd               ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/BACKGROUND_ROM.vhd             ;           ;
+; CHARIZARD_ROM.vhd                ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/CHARIZARD_ROM.vhd              ;           ;
+; FLAREON_ROM.vhd                  ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/FLAREON_ROM.vhd                ;           ;
+; GARCHOMP_ROM.vhd                 ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/GARCHOMP_ROM.vhd               ;           ;
+; JOLTEON_ROM.vhd                  ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/JOLTEON_ROM.vhd                ;           ;
+; LAPRAS_ROM.vhd                   ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/LAPRAS_ROM.vhd                 ;           ;
+; LEAFEON_ROM.vhd                  ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/LEAFEON_ROM.vhd                ;           ;
+; ODDISH_ROM.vhd                   ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/ODDISH_ROM.vhd                 ;           ;
+; PLL_40MHz.vhd                    ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/PLL_40MHz.vhd                  ; PLL_40MHz ;
+; PLL_40MHz/PLL_40MHz_0002.v       ; yes             ; User Verilog HDL File                  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/PLL_40MHz/PLL_40MHz_0002.v     ; PLL_40MHz ;
+; RANDOM_ROM.vhd                   ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/RANDOM_ROM.vhd                 ;           ;
+; SANDSLASH_ROM.vhd                ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/SANDSLASH_ROM.vhd              ;           ;
+; VAPOREON_ROM.vhd                 ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/VAPOREON_ROM.vhd               ;           ;
+; ZERAORA_ROM.vhd                  ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/ZERAORA_ROM.vhd                ;           ;
+; VGA.vhd                          ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/VGA.vhd                        ;           ;
+; VGA_package.vhd                  ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/VGA_package.vhd                ;           ;
+; basic_package.vhd                ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/basic_package.vhd              ;           ;
+; bit1_fullAdder.vhd               ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/bit1_fullAdder.vhd             ;           ;
+; bitn_fullAdder.vhd               ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/bitn_fullAdder.vhd             ;           ;
+; contador_uni.vhd                 ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/contador_uni.vhd               ;           ;
+; image_sync.vhd                   ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/image_sync.vhd                 ;           ;
+; move_controller.vhd              ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/move_controller.vhd            ;           ;
+; pixel_generate.vhd               ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd             ;           ;
+; pokemon_sel.vhd                  ; yes             ; User VHDL File                         ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pokemon_sel.vhd                ;           ;
+; NAMES_ROM.vhd                    ; yes             ; User Wizard-Generated File             ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/NAMES_ROM.vhd                  ;           ;
+; altera_pll.v                     ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altera_pll.v                                     ;           ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altsyncram.tdf                                   ;           ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/stratix_ram_block.inc                            ;           ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/lpm_mux.inc                                      ;           ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/lpm_decode.inc                                   ;           ;
+; aglobal251.inc                   ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/aglobal251.inc                                   ;           ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/a_rdenreg.inc                                    ;           ;
+; altrom.inc                       ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altrom.inc                                       ;           ;
+; altram.inc                       ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altram.inc                                       ;           ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altdpram.inc                                     ;           ;
+; db/altsyncram_5224.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_5224.tdf         ;           ;
+; sprite_mifs/leafeon.mif          ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/leafeon.mif        ;           ;
+; db/altsyncram_v224.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_v224.tdf         ;           ;
+; sprite_mifs/zeraora.mif          ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/zeraora.mif        ;           ;
+; db/altsyncram_l624.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_l624.tdf         ;           ;
+; sprite_mifs/vaporeon.mif         ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/vaporeon.mif       ;           ;
+; db/altsyncram_c924.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_c924.tdf         ;           ;
+; sprite_mifs/sandslash.mif        ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/sandslash.mif      ;           ;
+; db/altsyncram_6v14.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_6v14.tdf         ;           ;
+; sprite_mifs/oddish.mif           ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/oddish.mif         ;           ;
+; db/altsyncram_ev14.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_ev14.tdf         ;           ;
+; sprite_mifs/lapras.mif           ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/lapras.mif         ;           ;
+; db/altsyncram_6324.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_6324.tdf         ;           ;
+; sprite_mifs/jolteon.mif          ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/jolteon.mif        ;           ;
+; db/altsyncram_s524.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_s524.tdf         ;           ;
+; sprite_mifs/garchomp.mif         ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/garchomp.mif       ;           ;
+; db/altsyncram_i224.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_i224.tdf         ;           ;
+; sprite_mifs/flareon.mif          ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/flareon.mif        ;           ;
+; db/altsyncram_3924.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_3924.tdf         ;           ;
+; sprite_mifs/charizard.mif        ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/charizard.mif      ;           ;
+; db/altsyncram_cv14.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_cv14.tdf         ;           ;
+; sprite_mifs/random.mif           ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/random.mif         ;           ;
+; db/altsyncram_u934.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_u934.tdf         ;           ;
+; sprite_mifs/background.mif       ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/background.mif     ;           ;
+; db/decode_11a.tdf                ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/decode_11a.tdf              ;           ;
+; db/mux_7hb.tdf                   ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/mux_7hb.tdf                 ;           ;
+; db/altsyncram_qo34.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_qo34.tdf         ;           ;
+; sprite_mifs/PK_NAMES_TILES.mif   ; yes             ; Auto-Found Memory Initialization File  ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/sprite_mifs/PK_NAMES_TILES.mif ;           ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/lpm_divide.tdf                                   ;           ;
+; abs_divider.inc                  ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/abs_divider.inc                                  ;           ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                           ; /opt/intelFPGA/25.1/quartus/libraries/megafunctions/sign_div_unsign.inc                              ;           ;
+; db/lpm_divide_apo.tdf            ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/lpm_divide_apo.tdf          ;           ;
+; db/abs_divider_jbg.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/abs_divider_jbg.tdf         ;           ;
+; db/alt_u_div_mve.tdf             ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/alt_u_div_mve.tdf           ;           ;
+; db/lpm_abs_jn9.tdf               ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/lpm_abs_jn9.tdf             ;           ;
+; db/lpm_abs_4p9.tdf               ; yes             ; Auto-Generated Megafunction            ; /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/lpm_abs_4p9.tdf             ;           ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+-----------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -309,20 +314,20 @@ on the Quartus Prime software download page.
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                        ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 870                                                                                                          ;
+; Estimate of Logic utilization (ALMs needed) ; 1012                                                                                                         ;
 ;                                             ;                                                                                                              ;
-; Combinational ALUT usage for logic          ; 1560                                                                                                         ;
+; Combinational ALUT usage for logic          ; 1742                                                                                                         ;
 ;     -- 7 input functions                    ; 0                                                                                                            ;
-;     -- 6 input functions                    ; 133                                                                                                          ;
-;     -- 5 input functions                    ; 344                                                                                                          ;
+;     -- 6 input functions                    ; 201                                                                                                          ;
+;     -- 5 input functions                    ; 347                                                                                                          ;
 ;     -- 4 input functions                    ; 292                                                                                                          ;
-;     -- <=3 input functions                  ; 791                                                                                                          ;
+;     -- <=3 input functions                  ; 902                                                                                                          ;
 ;                                             ;                                                                                                              ;
-; Dedicated logic registers                   ; 553                                                                                                          ;
+; Dedicated logic registers                   ; 827                                                                                                          ;
 ;                                             ;                                                                                                              ;
 ; I/O pins                                    ; 34                                                                                                           ;
 ; Total MLAB memory bits                      ; 0                                                                                                            ;
-; Total block memory bits                     ; 1245184                                                                                                      ;
+; Total block memory bits                     ; 1769472                                                                                                      ;
 ;                                             ;                                                                                                              ;
 ; Total DSP Blocks                            ; 0                                                                                                            ;
 ;                                             ;                                                                                                              ;
@@ -330,9 +335,9 @@ on the Quartus Prime software download page.
 ;     -- PLLs                                 ; 1                                                                                                            ;
 ;                                             ;                                                                                                              ;
 ; Maximum fan-out node                        ; VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 819                                                                                                          ;
-; Total fan-out                               ; 12318                                                                                                        ;
-; Average fan-out                             ; 5.09                                                                                                         ;
+; Maximum fan-out                             ; 1157                                                                                                         ;
+; Total fan-out                               ; 14458                                                                                                        ;
+; Average fan-out                             ; 4.91                                                                                                         ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------+
 
 
@@ -341,8 +346,8 @@ on the Quartus Prime software download page.
 +------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                      ; Entity Name     ; Library Name ;
 +------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |POKEMON                                                   ; 1560 (1)            ; 553 (0)                   ; 1245184           ; 0          ; 34   ; 0            ; |POKEMON                                                                                                                                                                 ; POKEMON         ; work         ;
-;    |VGA:IMAGE_CONTROL|                                     ; 1525 (1)            ; 524 (0)                   ; 1245184           ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL                                                                                                                                               ; VGA             ; work         ;
+; |POKEMON                                                   ; 1742 (1)            ; 827 (0)                   ; 1769472           ; 0          ; 34   ; 0            ; |POKEMON                                                                                                                                                                 ; POKEMON         ; work         ;
+;    |VGA:IMAGE_CONTROL|                                     ; 1707 (1)            ; 798 (0)                   ; 1769472           ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL                                                                                                                                               ; VGA             ; work         ;
 ;       |PLL_40MHz:CLOCK_BLOCK|                              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK                                                                                                                         ; PLL_40MHz       ; pll_40mhz    ;
 ;          |PLL_40MHz_0002:pll_40mhz_inst|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst                                                                                           ; PLL_40MHz_0002  ; PLL_40MHz    ;
 ;             |altera_pll:altera_pll_i|                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst|altera_pll:altera_pll_i                                                                   ; altera_pll      ; work         ;
@@ -372,11 +377,16 @@ on the Quartus Prime software download page.
 ;             |bit1_fullAdder:\fullAdderLoop:9:fullAdder_i|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|bitn_fullAdder:POS1_Y_SUM|bit1_fullAdder:\fullAdderLoop:9:fullAdder_i                                               ; bit1_fullAdder  ; work         ;
 ;          |contador_uni:REFRESH_C0|                         ; 22 (22)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C0                                                                                             ; contador_uni    ; work         ;
 ;          |contador_uni:REFRESH_C1|                         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C1                                                                                             ; contador_uni    ; work         ;
-;       |pixel_generate:COLOR_BLOCK|                         ; 1404 (278)          ; 453 (449)                 ; 1245184           ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK                                                                                                                    ; pixel_generate  ; work         ;
+;       |pixel_generate:COLOR_BLOCK|                         ; 1586 (440)          ; 727 (719)                 ; 1769472           ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK                                                                                                                    ; pixel_generate  ; work         ;
 ;          |BACKGROUND_ROM:BACKGROUND_SP|                    ; 4 (0)               ; 4 (0)                     ; 524288            ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP                                                                                       ; BACKGROUND_ROM  ; work         ;
 ;             |altsyncram:altsyncram_component|              ; 4 (0)               ; 4 (0)                     ; 524288            ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component                                                       ; altsyncram      ; work         ;
-;                |altsyncram_cb34:auto_generated|            ; 4 (0)               ; 4 (4)                     ; 524288            ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated                        ; altsyncram_cb34 ; work         ;
-;                   |decode_11a:rden_decode|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated|decode_11a:rden_decode ; decode_11a      ; work         ;
+;                |altsyncram_u934:auto_generated|            ; 4 (0)               ; 4 (4)                     ; 524288            ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_u934:auto_generated                        ; altsyncram_u934 ; work         ;
+;                   |decode_11a:rden_decode|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_u934:auto_generated|decode_11a:rden_decode ; decode_11a      ; work         ;
+;          |NAMES_ROM:TILES_ROM|                             ; 20 (0)              ; 4 (0)                     ; 524288            ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM                                                                                                ; NAMES_ROM       ; work         ;
+;             |altsyncram:altsyncram_component|              ; 20 (0)              ; 4 (0)                     ; 524288            ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component                                                                ; altsyncram      ; work         ;
+;                |altsyncram_qo34:auto_generated|            ; 20 (0)              ; 4 (4)                     ; 524288            ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_qo34:auto_generated                                 ; altsyncram_qo34 ; work         ;
+;                   |decode_11a:rden_decode|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_qo34:auto_generated|decode_11a:rden_decode          ; decode_11a      ; work         ;
+;                   |mux_7hb:mux2|                           ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_qo34:auto_generated|mux_7hb:mux2                    ; mux_7hb         ; work         ;
 ;          |lpm_divide:Div0|                                 ; 365 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0                                                                                                    ; lpm_divide      ; work         ;
 ;             |lpm_divide_apo:auto_generated|                ; 365 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0|lpm_divide_apo:auto_generated                                                                      ; lpm_divide_apo  ; work         ;
 ;                |abs_divider_jbg:divider|                   ; 365 (8)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0|lpm_divide_apo:auto_generated|abs_divider_jbg:divider                                              ; abs_divider_jbg ; work         ;
@@ -430,24 +440,25 @@ on the Quartus Prime software download page.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                  ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-------------------------------+
-; Name                                                                                                                                                                 ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                           ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-------------------------------+
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated|ALTSYNCRAM                  ; AUTO ; ROM            ; 32768        ; 16           ; --           ; --           ; 524288 ; ../sprite_mifs/background.mif ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component|altsyncram_3924:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/charizard.mif  ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component|altsyncram_i224:auto_generated|ALTSYNCRAM     ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/flareon.mif    ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP|altsyncram:altsyncram_component|altsyncram_s524:auto_generated|ALTSYNCRAM   ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/garchomp.mif   ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP|altsyncram:altsyncram_component|altsyncram_6324:auto_generated|ALTSYNCRAM     ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/jolteon.mif    ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP|altsyncram:altsyncram_component|altsyncram_ev14:auto_generated|ALTSYNCRAM       ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/lapras.mif     ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component|altsyncram_5224:auto_generated|ALTSYNCRAM     ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/leafeon.mif    ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP|altsyncram:altsyncram_component|altsyncram_6v14:auto_generated|ALTSYNCRAM       ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/oddish.mif     ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component|altsyncram_cv14:auto_generated|ALTSYNCRAM       ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/random.mif     ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP|altsyncram:altsyncram_component|altsyncram_c924:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/sandslash.mif  ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP|altsyncram:altsyncram_component|altsyncram_l624:auto_generated|ALTSYNCRAM   ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/vaporeon.mif   ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component|altsyncram_v224:auto_generated|ALTSYNCRAM     ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/zeraora.mif    ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------+
+; Name                                                                                                                                                                 ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                               ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------+
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_u934:auto_generated|ALTSYNCRAM                  ; AUTO ; ROM            ; 32768        ; 16           ; --           ; --           ; 524288 ; ./sprite_mifs/background.mif      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_qo34:auto_generated|ALTSYNCRAM                           ; AUTO ; ROM            ; 32768        ; 16           ; --           ; --           ; 524288 ; ../sprite_mifs/PK_NAMES_TILES.mif ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|CHARIZARD_ROM:CHARIZARD_SP|altsyncram:altsyncram_component|altsyncram_3924:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/charizard.mif      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|FLAREON_ROM:FLAREON_SP|altsyncram:altsyncram_component|altsyncram_i224:auto_generated|ALTSYNCRAM     ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/flareon.mif        ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|GARCHOMP_ROM:GARCHOMP_SP|altsyncram:altsyncram_component|altsyncram_s524:auto_generated|ALTSYNCRAM   ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/garchomp.mif       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|JOLTEON_ROM:JOLTEON_SP|altsyncram:altsyncram_component|altsyncram_6324:auto_generated|ALTSYNCRAM     ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/jolteon.mif        ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LAPRAS_ROM:LAPRAS_SP|altsyncram:altsyncram_component|altsyncram_ev14:auto_generated|ALTSYNCRAM       ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/lapras.mif         ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component|altsyncram_5224:auto_generated|ALTSYNCRAM     ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/leafeon.mif        ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ODDISH_ROM:ODDISH_SP|altsyncram:altsyncram_component|altsyncram_6v14:auto_generated|ALTSYNCRAM       ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/oddish.mif         ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component|altsyncram_cv14:auto_generated|ALTSYNCRAM       ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/random.mif         ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP|altsyncram:altsyncram_component|altsyncram_c924:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/sandslash.mif      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP|altsyncram:altsyncram_component|altsyncram_l624:auto_generated|ALTSYNCRAM   ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/vaporeon.mif       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component|altsyncram_v224:auto_generated|ALTSYNCRAM     ; AUTO ; True Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; ../sprite_mifs/zeraora.mif        ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -467,6 +478,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; ROM: 2-PORT  ; 25.1    ; N/A          ; N/A          ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP       ; RANDOM_ROM.vhd     ;
 ; Altera ; ROM: 2-PORT  ; 25.1    ; N/A          ; N/A          ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|SANDSLASH_ROM:SANDSLASH_SP ; SANDSLASH_ROM.vhd  ;
 ; Altera ; ROM: 2-PORT  ; 25.1    ; N/A          ; N/A          ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|VAPOREON_ROM:VAPOREON_SP   ; VAPOREON_ROM.vhd   ;
+; Altera ; ROM: 1-PORT  ; 25.1    ; N/A          ; N/A          ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM                           ; NAMES_ROM.vhd      ;
 +--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------------------------------+--------------------+
 
 
@@ -489,8 +501,6 @@ Encoding Type:  One-Hot
 +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
 ; Register name                                                                ; Reason for Removal                                                                       ;
 +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|R[0..2]                         ; Stuck at GND due to stuck port data_in                                                   ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|G[0,1]                          ; Stuck at GND due to stuck port data_in                                                   ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|B[0..2]                         ; Stuck at GND due to stuck port data_in                                                   ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|Y_REG[11..30]                   ; Stuck at GND due to stuck port data_in                                                   ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|X_REG[11..30]                   ; Stuck at GND due to stuck port data_in                                                   ;
@@ -518,6 +528,111 @@ Encoding Type:  One-Hot
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|R_RATE0[19]                      ; Merged with VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|R_RATE0[20]                      ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|R_RATE0[20]                      ; Merged with VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|R_RATE0[21]                      ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|R_RATE0[21]                      ; Merged with VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|R_RATE1[21]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[0]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[0]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[1]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[1]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[2]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[2]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[3]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[3]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[4]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[4]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[5]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[5]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[6]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[6]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[7]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[7]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[8]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[8]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[9]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[9]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[10]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[10]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[11]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[11]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[12]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[12]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[13]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[13]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[14]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[14]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[15]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[15]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[16]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[16]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[17]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[17]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[18]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[18]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[19]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[19]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[20]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[20]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[21]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[21]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[22]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[22]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[23]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[23]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[24]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[24]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[25]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[25]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[26]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[26]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[27]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[27]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[28]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[28]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[29]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[29]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[30]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[30]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0[31]                     ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[31]                     ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0[0]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[0]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0[1]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[1]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0[2]                      ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[2]                      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[0]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[0]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[1]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[1]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[2]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[2]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[3]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[3]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[4]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[4]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[5]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[5]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[6]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[6]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[7]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[7]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[8]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[8]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[9]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[9]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[10]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[10]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[11]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[11]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[12]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[12]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[13]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[13]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[14]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[14]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[15]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[15]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[16]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[16]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[17]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[17]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[18]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[18]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[19]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[19]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[20]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[20]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[21]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[21]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[22]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[22]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[23]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[23]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[24]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[24]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[25]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[25]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[26]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[26]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[27]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[27]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[28]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[28]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[29]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[29]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[30]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[30]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG[31]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[31]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG[0]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[0]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG[1]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[1]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG[2]                  ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[2]                  ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG2[2]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[2]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG2[1]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[1]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG2[0]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[0]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[31]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[31]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[30]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[30]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[29]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[29]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[28]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[28]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[27]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[27]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[26]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[26]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[25]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[25]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[24]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[24]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[23]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[23]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[22]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[22]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[21]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[21]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[20]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[20]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[19]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[19]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[18]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[18]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[17]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[17]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[16]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[16]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[15]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[15]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[14]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[14]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[13]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[13]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[12]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[12]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[11]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[11]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[10]                ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[10]                ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[9]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[9]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[8]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[8]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[7]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[7]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[6]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[6]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[5]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[5]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[4]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[4]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[3]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[3]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[2]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[2]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[1]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[1]                 ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG2[0]                 ; Merged with VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[0]                 ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[0]                       ; Merged with VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[0]                       ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_Y[0]                       ; Merged with VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_Y[0]                       ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C1|temp[21] ; Merged with VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|contador_uni:REFRESH_C0|temp[21] ;
@@ -557,42 +672,62 @@ Encoding Type:  One-Hot
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[5,6]                     ; Stuck at GND due to stuck port data_in                                                   ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[7]                       ; Stuck at VCC due to stuck port data_in                                                   ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[8..10]                   ; Stuck at GND due to stuck port data_in                                                   ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[3..8]              ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[0..5]              ; Lost fanout                                                                              ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG2_PK1[0..6]          ; Lost fanout                                                                              ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG2_PK1[0..6]          ; Lost fanout                                                                              ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG2_PK0[0..6]          ; Lost fanout                                                                              ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG2_PK0[0..6]          ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[0..2]              ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG2[3..8]              ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[0]                  ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[0]                      ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[1]                  ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[1]                      ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[0]                  ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[0]                      ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[1]                  ; Lost fanout                                                                              ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[1]                      ; Lost fanout                                                                              ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|POS0_Y_RST                       ; Stuck at GND due to stuck port data_in                                                   ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[5]                       ; Merged with VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[1]                       ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[4]                       ; Merged with VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[3]                       ;
-; Total Number of Removed Registers = 174                                      ;                                                                                          ;
+; Total Number of Removed Registers = 303                                      ;                                                                                          ;
 +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                        ;
-+--------------------------------------------------------+--------------------------------+----------------------------------------------------------+
-; Register name                                          ; Reason for Removal             ; Registers Removed due to This Register                   ;
-+--------------------------------------------------------+--------------------------------+----------------------------------------------------------+
-; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|MV0_X[0]   ; Stuck at GND                   ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[1],  ;
-;                                                        ; due to stuck port clock_enable ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[2],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[3],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[4],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[5],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[6],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[7],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[8],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[9],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[10]  ;
-; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|MV1_X[0]   ; Stuck at GND                   ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[10], ;
-;                                                        ; due to stuck port clock_enable ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[9],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[8],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[7],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[6],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[2]   ;
-; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|R_RATE0[0] ; Stuck at GND                   ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[0],  ;
-;                                                        ; due to stuck port data_in      ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_Y[0],  ;
-;                                                        ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|POS0_Y_RST   ;
-+--------------------------------------------------------+--------------------------------+----------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                  ;
++--------------------------------------------------------------+--------------------------------+--------------------------------------------------------------+
+; Register name                                                ; Reason for Removal             ; Registers Removed due to This Register                       ;
++--------------------------------------------------------------+--------------------------------+--------------------------------------------------------------+
+; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|MV0_X[0]         ; Stuck at GND                   ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[1],      ;
+;                                                              ; due to stuck port clock_enable ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[2],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[3],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[4],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[5],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[6],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[7],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[8],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[9],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[10]      ;
+; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|MV1_X[0]         ; Stuck at GND                   ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[10],     ;
+;                                                              ; due to stuck port clock_enable ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[9],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[8],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[7],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[6],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[2]       ;
+; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|R_RATE0[0]       ; Stuck at GND                   ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[0],      ;
+;                                                              ; due to stuck port data_in      ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_Y[0],      ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|POS0_Y_RST       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[0] ; Lost Fanouts                   ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[0], ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[0]      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[1] ; Lost Fanouts                   ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[1], ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[1]      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[0] ; Lost Fanouts                   ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[0], ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[0]      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[1] ; Lost Fanouts                   ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[1], ;
+;                                                              ;                                ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[1]      ;
++--------------------------------------------------------------+--------------------------------+--------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -600,9 +735,9 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 553   ;
-; Number of registers using Synchronous Clear  ; 95    ;
-; Number of registers using Synchronous Load   ; 15    ;
+; Total registers                              ; 827   ;
+; Number of registers using Synchronous Clear  ; 104   ;
+; Number of registers using Synchronous Load   ; 31    ;
 ; Number of registers using Asynchronous Clear ; 63    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 57    ;
@@ -615,19 +750,28 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------------+---------+
 ; Inverted Register                                                 ; Fan out ;
 +-------------------------------------------------------------------+---------+
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG2_PK0[31] ; 1       ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG2_PK0[31] ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[31]     ; 4       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[31]     ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG2_PK1[31] ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG2_PK1[31] ; 1       ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG_PK0[31]  ; 3       ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG_PK0[31]  ; 3       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG2[31]     ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG2_PK0[31] ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG2_PK0[31] ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[31]      ; 2       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG[31]      ; 2       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG_PK1[31]  ; 3       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG_PK1[31]  ; 3       ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_PK0[31]      ; 1       ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_PK0[31]      ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[31]      ; 2       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG_PK0[31]  ; 3       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG_PK0[31]  ; 3       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1[31]          ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0[31]          ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_PK1[31]      ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_PK1[31]      ; 1       ;
-; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|Y_REG[31]            ; 81      ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[31]          ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_PK0[31]      ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_PK0[31]      ; 1       ;
+; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|Y_REG[31]            ; 84      ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG_PK0[0]   ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG_PK1[0]   ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_PK0[0]       ; 1       ;
@@ -638,24 +782,26 @@ Encoding Type:  One-Hot
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_PK1[0]       ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|X_REG[0]             ; 3       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|Y_REG[0]             ; 3       ;
-; Total number of inverted registers = 23                           ;         ;
+; Total number of inverted registers = 32                           ;         ;
 +-------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER|temp[0] ;
-; 7:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|G[7]                      ;
-; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux268 ;
-; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux129 ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux289 ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux141 ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Selector7                                   ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Selector8                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER|temp[0]                                                                                            ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|ADDR_INT_MENU[3]                                                                                                     ;
+; 11:1               ; 16 bits   ; 112 LEs       ; 80 LEs               ; 32 LEs                 ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|G[7]                                                                                                                 ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_qo34:auto_generated|mux_7hb:mux2|l2_w0_n0_mux_dataout ;
+; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux130                                                                                            ;
+; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux268                                                                                            ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux139                                                                                            ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux280                                                                                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Selector7                                                                                                                              ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Selector8                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -758,12 +904,21 @@ Encoding Type:  One-Hot
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated ;
+; Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_u934:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                                ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                 ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_qo34:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                       ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                        ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -1766,62 +1921,123 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component ;
-+------------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
-; Parameter Name                     ; Value                         ; Type                                                                              ;
-+------------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                             ; Untyped                                                                           ;
-; AUTO_CARRY_CHAINS                  ; ON                            ; AUTO_CARRY                                                                        ;
-; IGNORE_CARRY_BUFFERS               ; OFF                           ; IGNORE_CARRY                                                                      ;
-; AUTO_CASCADE_CHAINS                ; ON                            ; AUTO_CASCADE                                                                      ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                           ; IGNORE_CASCADE                                                                    ;
-; WIDTH_BYTEENA                      ; 1                             ; Untyped                                                                           ;
-; OPERATION_MODE                     ; ROM                           ; Untyped                                                                           ;
-; WIDTH_A                            ; 16                            ; Signed Integer                                                                    ;
-; WIDTHAD_A                          ; 15                            ; Signed Integer                                                                    ;
-; NUMWORDS_A                         ; 32768                         ; Signed Integer                                                                    ;
-; OUTDATA_REG_A                      ; CLOCK0                        ; Untyped                                                                           ;
-; ADDRESS_ACLR_A                     ; NONE                          ; Untyped                                                                           ;
-; OUTDATA_ACLR_A                     ; NONE                          ; Untyped                                                                           ;
-; WRCONTROL_ACLR_A                   ; NONE                          ; Untyped                                                                           ;
-; INDATA_ACLR_A                      ; NONE                          ; Untyped                                                                           ;
-; BYTEENA_ACLR_A                     ; NONE                          ; Untyped                                                                           ;
-; WIDTH_B                            ; 1                             ; Signed Integer                                                                    ;
-; WIDTHAD_B                          ; 1                             ; Signed Integer                                                                    ;
-; NUMWORDS_B                         ; 0                             ; Signed Integer                                                                    ;
-; INDATA_REG_B                       ; CLOCK1                        ; Untyped                                                                           ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                        ; Untyped                                                                           ;
-; RDCONTROL_REG_B                    ; CLOCK1                        ; Untyped                                                                           ;
-; ADDRESS_REG_B                      ; CLOCK1                        ; Untyped                                                                           ;
-; OUTDATA_REG_B                      ; UNREGISTERED                  ; Untyped                                                                           ;
-; BYTEENA_REG_B                      ; CLOCK1                        ; Untyped                                                                           ;
-; INDATA_ACLR_B                      ; NONE                          ; Untyped                                                                           ;
-; WRCONTROL_ACLR_B                   ; NONE                          ; Untyped                                                                           ;
-; ADDRESS_ACLR_B                     ; NONE                          ; Untyped                                                                           ;
-; OUTDATA_ACLR_B                     ; NONE                          ; Untyped                                                                           ;
-; RDCONTROL_ACLR_B                   ; NONE                          ; Untyped                                                                           ;
-; BYTEENA_ACLR_B                     ; NONE                          ; Untyped                                                                           ;
-; WIDTH_BYTEENA_A                    ; 1                             ; Signed Integer                                                                    ;
-; WIDTH_BYTEENA_B                    ; 1                             ; Signed Integer                                                                    ;
-; RAM_BLOCK_TYPE                     ; AUTO                          ; Untyped                                                                           ;
-; BYTE_SIZE                          ; 8                             ; Signed Integer                                                                    ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                     ; Untyped                                                                           ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ          ; Untyped                                                                           ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ          ; Untyped                                                                           ;
-; INIT_FILE                          ; ../sprite_mifs/background.mif ; Untyped                                                                           ;
-; INIT_FILE_LAYOUT                   ; PORT_A                        ; Untyped                                                                           ;
-; MAXIMUM_DEPTH                      ; 0                             ; Signed Integer                                                                    ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                        ; Untyped                                                                           ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                        ; Untyped                                                                           ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                        ; Untyped                                                                           ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                        ; Untyped                                                                           ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN               ; Untyped                                                                           ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN               ; Untyped                                                                           ;
-; ENABLE_ECC                         ; FALSE                         ; Untyped                                                                           ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                         ; Untyped                                                                           ;
-; WIDTH_ECCSTATUS                    ; 3                             ; Signed Integer                                                                    ;
-; DEVICE_FAMILY                      ; Cyclone V                     ; Untyped                                                                           ;
-; CBXI_PARAMETER                     ; altsyncram_cb34               ; Untyped                                                                           ;
-+------------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
++------------------------------------+------------------------------+------------------------------------------------------------------------------------+
+; Parameter Name                     ; Value                        ; Type                                                                               ;
++------------------------------------+------------------------------+------------------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                            ; Untyped                                                                            ;
+; AUTO_CARRY_CHAINS                  ; ON                           ; AUTO_CARRY                                                                         ;
+; IGNORE_CARRY_BUFFERS               ; OFF                          ; IGNORE_CARRY                                                                       ;
+; AUTO_CASCADE_CHAINS                ; ON                           ; AUTO_CASCADE                                                                       ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                          ; IGNORE_CASCADE                                                                     ;
+; WIDTH_BYTEENA                      ; 1                            ; Untyped                                                                            ;
+; OPERATION_MODE                     ; ROM                          ; Untyped                                                                            ;
+; WIDTH_A                            ; 16                           ; Signed Integer                                                                     ;
+; WIDTHAD_A                          ; 15                           ; Signed Integer                                                                     ;
+; NUMWORDS_A                         ; 32768                        ; Signed Integer                                                                     ;
+; OUTDATA_REG_A                      ; CLOCK0                       ; Untyped                                                                            ;
+; ADDRESS_ACLR_A                     ; NONE                         ; Untyped                                                                            ;
+; OUTDATA_ACLR_A                     ; NONE                         ; Untyped                                                                            ;
+; WRCONTROL_ACLR_A                   ; NONE                         ; Untyped                                                                            ;
+; INDATA_ACLR_A                      ; NONE                         ; Untyped                                                                            ;
+; BYTEENA_ACLR_A                     ; NONE                         ; Untyped                                                                            ;
+; WIDTH_B                            ; 1                            ; Signed Integer                                                                     ;
+; WIDTHAD_B                          ; 1                            ; Signed Integer                                                                     ;
+; NUMWORDS_B                         ; 0                            ; Signed Integer                                                                     ;
+; INDATA_REG_B                       ; CLOCK1                       ; Untyped                                                                            ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                       ; Untyped                                                                            ;
+; RDCONTROL_REG_B                    ; CLOCK1                       ; Untyped                                                                            ;
+; ADDRESS_REG_B                      ; CLOCK1                       ; Untyped                                                                            ;
+; OUTDATA_REG_B                      ; UNREGISTERED                 ; Untyped                                                                            ;
+; BYTEENA_REG_B                      ; CLOCK1                       ; Untyped                                                                            ;
+; INDATA_ACLR_B                      ; NONE                         ; Untyped                                                                            ;
+; WRCONTROL_ACLR_B                   ; NONE                         ; Untyped                                                                            ;
+; ADDRESS_ACLR_B                     ; NONE                         ; Untyped                                                                            ;
+; OUTDATA_ACLR_B                     ; NONE                         ; Untyped                                                                            ;
+; RDCONTROL_ACLR_B                   ; NONE                         ; Untyped                                                                            ;
+; BYTEENA_ACLR_B                     ; NONE                         ; Untyped                                                                            ;
+; WIDTH_BYTEENA_A                    ; 1                            ; Signed Integer                                                                     ;
+; WIDTH_BYTEENA_B                    ; 1                            ; Signed Integer                                                                     ;
+; RAM_BLOCK_TYPE                     ; AUTO                         ; Untyped                                                                            ;
+; BYTE_SIZE                          ; 8                            ; Signed Integer                                                                     ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                    ; Untyped                                                                            ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ         ; Untyped                                                                            ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ         ; Untyped                                                                            ;
+; INIT_FILE                          ; ./sprite_mifs/background.mif ; Untyped                                                                            ;
+; INIT_FILE_LAYOUT                   ; PORT_A                       ; Untyped                                                                            ;
+; MAXIMUM_DEPTH                      ; 0                            ; Signed Integer                                                                     ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                       ; Untyped                                                                            ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                       ; Untyped                                                                            ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                       ; Untyped                                                                            ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                       ; Untyped                                                                            ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN              ; Untyped                                                                            ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN              ; Untyped                                                                            ;
+; ENABLE_ECC                         ; FALSE                        ; Untyped                                                                            ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                        ; Untyped                                                                            ;
+; WIDTH_ECCSTATUS                    ; 3                            ; Signed Integer                                                                     ;
+; DEVICE_FAMILY                      ; Cyclone V                    ; Untyped                                                                            ;
+; CBXI_PARAMETER                     ; altsyncram_u934              ; Untyped                                                                            ;
++------------------------------------+------------------------------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component ;
++------------------------------------+-----------------------------------+----------------------------------------------------------------------+
+; Parameter Name                     ; Value                             ; Type                                                                 ;
++------------------------------------+-----------------------------------+----------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                 ; Untyped                                                              ;
+; AUTO_CARRY_CHAINS                  ; ON                                ; AUTO_CARRY                                                           ;
+; IGNORE_CARRY_BUFFERS               ; OFF                               ; IGNORE_CARRY                                                         ;
+; AUTO_CASCADE_CHAINS                ; ON                                ; AUTO_CASCADE                                                         ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                               ; IGNORE_CASCADE                                                       ;
+; WIDTH_BYTEENA                      ; 1                                 ; Untyped                                                              ;
+; OPERATION_MODE                     ; ROM                               ; Untyped                                                              ;
+; WIDTH_A                            ; 16                                ; Signed Integer                                                       ;
+; WIDTHAD_A                          ; 15                                ; Signed Integer                                                       ;
+; NUMWORDS_A                         ; 32768                             ; Signed Integer                                                       ;
+; OUTDATA_REG_A                      ; CLOCK0                            ; Untyped                                                              ;
+; ADDRESS_ACLR_A                     ; NONE                              ; Untyped                                                              ;
+; OUTDATA_ACLR_A                     ; NONE                              ; Untyped                                                              ;
+; WRCONTROL_ACLR_A                   ; NONE                              ; Untyped                                                              ;
+; INDATA_ACLR_A                      ; NONE                              ; Untyped                                                              ;
+; BYTEENA_ACLR_A                     ; NONE                              ; Untyped                                                              ;
+; WIDTH_B                            ; 1                                 ; Signed Integer                                                       ;
+; WIDTHAD_B                          ; 1                                 ; Signed Integer                                                       ;
+; NUMWORDS_B                         ; 0                                 ; Signed Integer                                                       ;
+; INDATA_REG_B                       ; CLOCK1                            ; Untyped                                                              ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                            ; Untyped                                                              ;
+; RDCONTROL_REG_B                    ; CLOCK1                            ; Untyped                                                              ;
+; ADDRESS_REG_B                      ; CLOCK1                            ; Untyped                                                              ;
+; OUTDATA_REG_B                      ; UNREGISTERED                      ; Untyped                                                              ;
+; BYTEENA_REG_B                      ; CLOCK1                            ; Untyped                                                              ;
+; INDATA_ACLR_B                      ; NONE                              ; Untyped                                                              ;
+; WRCONTROL_ACLR_B                   ; NONE                              ; Untyped                                                              ;
+; ADDRESS_ACLR_B                     ; NONE                              ; Untyped                                                              ;
+; OUTDATA_ACLR_B                     ; NONE                              ; Untyped                                                              ;
+; RDCONTROL_ACLR_B                   ; NONE                              ; Untyped                                                              ;
+; BYTEENA_ACLR_B                     ; NONE                              ; Untyped                                                              ;
+; WIDTH_BYTEENA_A                    ; 1                                 ; Signed Integer                                                       ;
+; WIDTH_BYTEENA_B                    ; 1                                 ; Signed Integer                                                       ;
+; RAM_BLOCK_TYPE                     ; AUTO                              ; Untyped                                                              ;
+; BYTE_SIZE                          ; 8                                 ; Signed Integer                                                       ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                         ; Untyped                                                              ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ              ; Untyped                                                              ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ              ; Untyped                                                              ;
+; INIT_FILE                          ; ../sprite_mifs/PK_NAMES_TILES.mif ; Untyped                                                              ;
+; INIT_FILE_LAYOUT                   ; PORT_A                            ; Untyped                                                              ;
+; MAXIMUM_DEPTH                      ; 0                                 ; Signed Integer                                                       ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                            ; Untyped                                                              ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                            ; Untyped                                                              ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                            ; Untyped                                                              ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                            ; Untyped                                                              ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                   ; Untyped                                                              ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                   ; Untyped                                                              ;
+; ENABLE_ECC                         ; FALSE                             ; Untyped                                                              ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                             ; Untyped                                                              ;
+; WIDTH_ECCSTATUS                    ; 3                                 ; Signed Integer                                                       ;
+; DEVICE_FAMILY                      ; Cyclone V                         ; Untyped                                                              ;
+; CBXI_PARAMETER                     ; altsyncram_qo34                   ; Untyped                                                              ;
++------------------------------------+-----------------------------------+----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1896,7 +2112,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                                                                      ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
-; Number of entity instances                ; 12                                                                                                                         ;
+; Number of entity instances                ; 13                                                                                                                         ;
 ; Entity Instance                           ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component     ;
 ;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                                                                            ;
 ;     -- WIDTH_A                            ; 16                                                                                                                         ;
@@ -2019,6 +2235,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                                       ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                                  ;
 ; Entity Instance                           ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component                  ;
+;     -- OPERATION_MODE                     ; ROM                                                                                                                        ;
+;     -- WIDTH_A                            ; 16                                                                                                                         ;
+;     -- NUMWORDS_A                         ; 32768                                                                                                                      ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                                                                                     ;
+;     -- WIDTH_B                            ; 1                                                                                                                          ;
+;     -- NUMWORDS_B                         ; 0                                                                                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                                  ;
+; Entity Instance                           ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component                           ;
 ;     -- OPERATION_MODE                     ; ROM                                                                                                                        ;
 ;     -- WIDTH_A                            ; 16                                                                                                                         ;
 ;     -- NUMWORDS_A                         ; 32768                                                                                                                      ;
@@ -2179,30 +2406,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 553                         ;
+; arriav_ff             ; 827                         ;
 ;     CLR               ; 9                           ;
 ;     CLR SCLR          ; 33                          ;
 ;     ENA               ; 36                          ;
 ;     ENA CLR           ; 10                          ;
 ;     ENA CLR SCLR      ; 11                          ;
-;     SCLR              ; 51                          ;
+;     SCLR              ; 44                          ;
+;     SCLR SLD          ; 16                          ;
 ;     SLD               ; 15                          ;
-;     plain             ; 388                         ;
-; arriav_lcell_comb     ; 1560                        ;
-;     arith             ; 491                         ;
-;         0 data inputs ; 62                          ;
-;         1 data inputs ; 229                         ;
-;         2 data inputs ; 26                          ;
+;     plain             ; 653                         ;
+; arriav_lcell_comb     ; 1742                        ;
+;     arith             ; 584                         ;
+;         0 data inputs ; 122                         ;
+;         1 data inputs ; 259                         ;
+;         2 data inputs ; 27                          ;
 ;         3 data inputs ; 62                          ;
-;         4 data inputs ; 112                         ;
-;     normal            ; 905                         ;
+;         4 data inputs ; 114                         ;
+;     normal            ; 994                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 24                          ;
-;         2 data inputs ; 179                         ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 180                         ;
-;         5 data inputs ; 344                         ;
-;         6 data inputs ; 133                         ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 185                         ;
+;         3 data inputs ; 52                          ;
+;         4 data inputs ; 178                         ;
+;         5 data inputs ; 347                         ;
+;         6 data inputs ; 201                         ;
 ;     shared            ; 164                         ;
 ;         0 data inputs ; 81                          ;
 ;         1 data inputs ; 38                          ;
@@ -2210,10 +2438,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 1                           ;
 ; boundary_port         ; 34                          ;
 ; generic_pll           ; 1                           ;
-; stratixv_ram_block    ; 240                         ;
+; stratixv_ram_block    ; 304                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 73.40                       ;
-; Average LUT depth     ; 24.20                       ;
+; Average LUT depth     ; 21.05                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2232,7 +2460,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Thu May 14 11:38:22 2026
+    Info: Processing started: Mon Jun  1 18:31:12 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off POKEMON -c POKEMON
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
@@ -2314,7 +2542,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file pokemon
     Info (12022): Found design unit 1: pokemon_sel-main File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pokemon_sel.vhd Line: 21
     Info (12023): Found entity 1: pokemon_sel File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pokemon_sel.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file NAMES_ROM.vhd
-    Info (12022): Found design unit 1: names_rom-SYN File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/NAMES_ROM.vhd Line: 55
+    Info (12022): Found design unit 1: names_rom-SYN File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/NAMES_ROM.vhd Line: 53
     Info (12023): Found entity 1: NAMES_ROM File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/NAMES_ROM.vhd Line: 43
 Info (12127): Elaborating entity "POKEMON" for the top level hierarchy
 Info (12128): Elaborating entity "VGA" for hierarchy "VGA:IMAGE_CONTROL" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 45
@@ -2391,7 +2619,7 @@ Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK
 Info (12128): Elaborating entity "image_sync" for hierarchy "VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/VGA.vhd Line: 80
 Info (12128): Elaborating entity "contador_uni" for hierarchy "VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:H_COUNTER" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/image_sync.vhd Line: 64
 Info (12128): Elaborating entity "pixel_generate" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/VGA.vhd Line: 92
-Info (12128): Elaborating entity "pokemon_sel" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 75
+Info (12128): Elaborating entity "pokemon_sel" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 87
 Info (12128): Elaborating entity "LEAFEON_ROM" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pokemon_sel.vhd Line: 430
 Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/LEAFEON_ROM.vhd Line: 70
 Info (12130): Elaborated megafunction instantiation "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|LEAFEON_ROM:LEAFEON_SP|altsyncram:altsyncram_component" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/LEAFEON_ROM.vhd Line: 70
@@ -3019,7 +3247,7 @@ Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cv14.tdf
     Info (12023): Found entity 1: altsyncram_cv14 File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_cv14.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_cv14" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|RANDOM_ROM:RANDOM_SP|altsyncram:altsyncram_component|altsyncram_cv14:auto_generated" File: /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "BACKGROUND_ROM" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 87
+Info (12128): Elaborating entity "BACKGROUND_ROM" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 99
 Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/BACKGROUND_ROM.vhd Line: 60
 Info (12130): Elaborated megafunction instantiation "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/BACKGROUND_ROM.vhd Line: 60
 Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component" with the following parameter: File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/BACKGROUND_ROM.vhd Line: 60
@@ -3043,7 +3271,7 @@ Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_
     Info (12134): Parameter "indata_aclr_a" = "UNUSED"
     Info (12134): Parameter "indata_aclr_b" = "NONE"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "../sprite_mifs/background.mif"
+    Info (12134): Parameter "init_file" = "./sprite_mifs/background.mif"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
     Info (12134): Parameter "numwords_a" = "32768"
@@ -3073,22 +3301,79 @@ Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cb34.tdf
-    Info (12023): Found entity 1: altsyncram_cb34 File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_cb34.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_cb34" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated" File: /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u934.tdf
+    Info (12023): Found entity 1: altsyncram_u934 File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_u934.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_u934" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_u934:auto_generated" File: /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_11a.tdf
     Info (12023): Found entity 1: decode_11a File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/decode_11a.tdf Line: 23
-Info (12128): Elaborating entity "decode_11a" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated|decode_11a:rden_decode" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_cb34.tdf Line: 41
+Info (12128): Elaborating entity "decode_11a" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_u934:auto_generated|decode_11a:rden_decode" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_u934.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_7hb.tdf
     Info (12023): Found entity 1: mux_7hb File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/mux_7hb.tdf Line: 23
-Info (12128): Elaborating entity "mux_7hb" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_cb34:auto_generated|mux_7hb:mux2" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_cb34.tdf Line: 42
+Info (12128): Elaborating entity "mux_7hb" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|BACKGROUND_ROM:BACKGROUND_SP|altsyncram:altsyncram_component|altsyncram_u934:auto_generated|mux_7hb:mux2" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_u934.tdf Line: 42
+Info (12128): Elaborating entity "NAMES_ROM" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 107
+Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/NAMES_ROM.vhd Line: 60
+Info (12130): Elaborated megafunction instantiation "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/NAMES_ROM.vhd Line: 60
+Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component" with the following parameter: File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/NAMES_ROM.vhd Line: 60
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "../sprite_mifs/PK_NAMES_TILES.mif"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "32768"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "15"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qo34.tdf
+    Info (12023): Found entity 1: altsyncram_qo34 File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_qo34.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_qo34" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_qo34:auto_generated" File: /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "battle_engine" for hierarchy "battle_engine:GAME_CONTROL" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 66
 Info (12128): Elaborating entity "bitn_fullAdder" for hierarchy "battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/battle_engine.vhd Line: 92
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|Div0" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 107
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|Div1" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 108
-Info (12130): Elaborated megafunction instantiation "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 107
-Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0" with the following parameter: File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 107
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|Div0" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 136
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|Div1" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 137
+Info (12130): Elaborated megafunction instantiation "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 136
+Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div0" with the following parameter: File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 136
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
@@ -3104,36 +3389,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_
     Info (12023): Found entity 1: lpm_abs_jn9 File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/lpm_abs_jn9.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_4p9.tdf
     Info (12023): Found entity 1: lpm_abs_4p9 File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/lpm_abs_4p9.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div1" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 108
-Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div1" with the following parameter: File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 108
+Info (12130): Elaborated megafunction instantiation "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div1" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 137
+Info (12133): Instantiated megafunction "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|lpm_divide:Div1" with the following parameter: File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/pixel_generate.vhd Line: 137
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "R_VGA[0]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 21
-    Warning (13410): Pin "R_VGA[1]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 21
-    Warning (13410): Pin "R_VGA[2]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 21
-    Warning (13410): Pin "G_VGA[0]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 22
-    Warning (13410): Pin "G_VGA[1]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 22
     Warning (13410): Pin "B_VGA[0]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 23
     Warning (13410): Pin "B_VGA[1]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 23
     Warning (13410): Pin "B_VGA[2]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 23
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 28 registers lost all their fanouts during netlist optimizations.
+Info (17049): 57 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 7 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2106 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2526 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 1831 logic cells
-    Info (21064): Implemented 240 RAM segments
+    Info (21061): Implemented 2187 logic cells
+    Info (21064): Implemented 304 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 567 megabytes
-    Info: Processing ended: Thu May 14 11:38:35 2026
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 590 megabytes
+    Info: Processing ended: Mon Jun  1 18:31:26 2026
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:28
 
 

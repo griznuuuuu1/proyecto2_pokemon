@@ -1,5 +1,5 @@
 Timing Analyzer report for POKEMON
-Thu May 14 11:39:44 2026
+Mon Jun  1 18:32:48 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -100,14 +100,14 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.16        ;
+; Average used               ; 2.18        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  39.0%      ;
-;     Processor 3            ;  38.6%      ;
-;     Processor 4            ;  38.5%      ;
+;     Processor 2            ;  39.6%      ;
+;     Processor 3            ;  39.4%      ;
+;     Processor 4            ;  39.2%      ;
 +----------------------------+-------------+
 
 
@@ -127,7 +127,7 @@ on the Quartus Prime software download page.
 +-----------+-----------------+-------------------------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                                      ; Note ;
 +-----------+-----------------+-------------------------------------------------------------------------------------------------+------+
-; 19.23 MHz ; 19.23 MHz       ; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 18.81 MHz ; 18.81 MHz       ; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +-----------+-----------------+-------------------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -143,7 +143,7 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                           ; Slack   ; End Point TNS ;
 +-------------------------------------------------------------------------------------------------+---------+---------------+
-; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -26.997 ; -398.945      ;
+; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -28.150 ; -410.470      ;
 +-------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -152,7 +152,7 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                           ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------------------------------+-------+---------------+
-; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.343 ; 0.000         ;
+; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.333 ; 0.000         ;
 +-------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -190,7 +190,7 @@ No synchronizer chains to report.
 +-----------+-----------------+-------------------------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                                      ; Note ;
 +-----------+-----------------+-------------------------------------------------------------------------------------------------+------+
-; 18.81 MHz ; 18.81 MHz       ; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 18.39 MHz ; 18.39 MHz       ; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +-----------+-----------------+-------------------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -200,7 +200,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                           ; Slack   ; End Point TNS ;
 +-------------------------------------------------------------------------------------------------+---------+---------------+
-; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -28.160 ; -414.308      ;
+; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -29.387 ; -428.908      ;
 +-------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -209,7 +209,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                           ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------------------------------+-------+---------------+
-; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.313 ; 0.000         ;
+; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.271 ; 0.000         ;
 +-------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -232,7 +232,7 @@ No paths to report.
 +-------------------------------------------------------------------------------------------------+--------+---------------+
 ; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.562  ; 0.000         ;
 ; IN_CLK                                                                                          ; 9.926  ; 0.000         ;
-; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 11.235 ; 0.000         ;
+; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 11.239 ; 0.000         ;
 +-------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -247,7 +247,7 @@ No synchronizer chains to report.
 +-------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                           ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------------------------+--------+---------------+
-; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.723 ; -54.182       ;
+; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.284 ; -58.806       ;
 +-------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -294,7 +294,7 @@ No synchronizer chains to report.
 +-------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                           ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------------------------+--------+---------------+
-; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -2.178 ; -30.293       ;
+; IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -2.719 ; -35.191       ;
 +-------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -341,13 +341,13 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+----------+-------+----------+---------+---------------------+
 ; Clock                                                                                            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +--------------------------------------------------------------------------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                                                 ; -28.160  ; 0.168 ; N/A      ; N/A     ; 1.562               ;
+; Worst-case Slack                                                                                 ; -29.387  ; 0.168 ; N/A      ; N/A     ; 1.562               ;
 ;  IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A      ; N/A   ; N/A      ; N/A     ; 1.562               ;
-;  IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -28.160  ; 0.168 ; N/A      ; N/A     ; 11.235              ;
+;  IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -29.387  ; 0.168 ; N/A      ; N/A     ; 11.239              ;
 ;  IN_CLK                                                                                          ; N/A      ; N/A   ; N/A      ; N/A     ; 9.632               ;
-; Design-wide TNS                                                                                  ; -414.308 ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+; Design-wide TNS                                                                                  ; -428.908 ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A      ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -414.308 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -428.908 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 ;  IN_CLK                                                                                          ; N/A      ; N/A   ; N/A      ; N/A     ; 0.000               ;
 +--------------------------------------------------------------------------------------------------+----------+-------+----------+---------+---------------------+
 
@@ -590,9 +590,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 4     ; 4    ;
-; Unconstrained Input Port Paths  ; 137   ; 137  ;
-; Unconstrained Output Ports      ; 21    ; 21   ;
-; Unconstrained Output Port Paths ; 37    ; 37   ;
+; Unconstrained Input Port Paths  ; 135   ; 135  ;
+; Unconstrained Output Ports      ; 26    ; 26   ;
+; Unconstrained Output Port Paths ; 42    ; 42   ;
 +---------------------------------+-------+------+
 
 
@@ -629,6 +629,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; B_VGA[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; B_VGA[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; B_VGA[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G_VGA[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G_VGA[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; G_VGA[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; G_VGA[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; G_VGA[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -638,6 +640,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; OUT_VGA_CLK ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; P0_RDY      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; P1_RDY      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; R_VGA[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; R_VGA[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; R_VGA[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; R_VGA[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; R_VGA[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; R_VGA[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -670,6 +675,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; B_VGA[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; B_VGA[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; B_VGA[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G_VGA[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G_VGA[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; G_VGA[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; G_VGA[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; G_VGA[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -679,6 +686,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; OUT_VGA_CLK ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; P0_RDY      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; P1_RDY      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; R_VGA[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; R_VGA[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; R_VGA[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; R_VGA[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; R_VGA[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; R_VGA[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -695,7 +705,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Thu May 14 11:39:35 2026
+    Info: Processing started: Mon Jun  1 18:32:39 2026
 Info: Command: quartus_sta POKEMON -c POKEMON
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -720,14 +730,14 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -26.997
+Info (332146): Worst-case setup slack is -28.150
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -26.997            -398.945 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.343
+    Info (332119):   -28.150            -410.470 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.333
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.343               0.000 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.333               0.000 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 1.562
@@ -746,14 +756,14 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -28.160
+Info (332146): Worst-case setup slack is -29.387
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -28.160            -414.308 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.313
+    Info (332119):   -29.387            -428.908 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.271
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.313               0.000 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.271               0.000 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 1.562
@@ -761,7 +771,7 @@ Info (332146): Worst-case minimum pulse width slack is 1.562
     Info (332119): ========= =================== =====================
     Info (332119):     1.562               0.000 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.926               0.000 IN_CLK 
-    Info (332119):    11.235               0.000 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    11.239               0.000 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -772,10 +782,10 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.723
+Info (332146): Worst-case setup slack is -4.284
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.723             -54.182 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -4.284             -58.806 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case hold slack is 0.178
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -796,10 +806,10 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.178
+Info (332146): Worst-case setup slack is -2.719
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.178             -30.293 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -2.719             -35.191 IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case hold slack is 0.168
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -815,9 +825,9 @@ Info (332146): Worst-case minimum pulse width slack is 1.562
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 926 megabytes
-    Info: Processing ended: Thu May 14 11:39:44 2026
+    Info: Peak virtual memory: 927 megabytes
+    Info: Processing ended: Mon Jun  1 18:32:48 2026
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 

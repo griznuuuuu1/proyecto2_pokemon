@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu May 14 11:38:35 2026
+Analysis & Synthesis Status : Successful - Mon Jun  1 18:31:26 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : POKEMON
 Top-level Entity Name : POKEMON
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 553
+Total registers : 827
 Total pins : 34
 Total virtual pins : 0
-Total block memory bits : 1,245,184
+Total block memory bits : 1,769,472
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -25,28 +25,94 @@ PACKAGE basic_package IS
 	SUBTYPE UINT32  IS STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SUBTYPE INT04K  IS INTEGER RANGE 0 TO 4095     ;
 	
---	TYPE    COLOR_T IS RECORD
---		R     : UINT08;
---		G     : UINT08;
---		B     : UINT08;
---	END RECORD COLOR_T;
-	
 	CONSTANT NO_ADDR : UINT12 := (OTHERS => '0');
 	
---	CONSTANT WHITE : COLOR_T :=
---	(
---		R => "11111111",
---		G => "11111111",
---		B => "11111111"
---	);
---	
---	CONSTANT BLACK : COLOR_T :=
---	(
---		R => "00000000",
---		G => "00000000",
---		B => "00000000"
---	);
+	TYPE PK_STAT IS RECORD
+		TYP : UINT03;
+		HP  : UINT08;
+		ATT : UINT06;
+		DEF : UINT06;
+	END RECORD;
 	
+	CONSTANT NOPK_STAT : PK_STAT :=
+	(
+		TYP =>        "100",
+		HP  =>        X"FF",
+		ATT => "11" & X"F" ,
+		DEF => "11" & X"F"
+	);
+
+	CONSTANT LEAF_STAT : PK_STAT :=
+	(
+		TYP =>        "000", --PLANTA
+		HP  =>        X"41", --65
+		ATT => "00" & X"B" , --11
+		DEF => "00" & X"D"   --13
+	);
+	CONSTANT ZERA_STAT : PK_STAT :=
+	(
+		TYP =>        "001", --ELECTRICO
+		HP  =>        X"58", --88
+		ATT => "00" & X"C" , --12
+		DEF => "00" & X"7"   --7
+	);
+	CONSTANT VAPO_STAT : PK_STAT :=
+	(
+		TYP =>        "010", --AGUA
+		HP  =>        X"82", --130
+		ATT => "00" & X"6" , --6
+		DEF => "00" & X"6"   --6
+	);
+	CONSTANT SAND_STAT : PK_STAT :=
+	(
+		TYP =>        "011", --TIERRA
+		HP  =>        X"4B", --75
+		ATT => "00" & X"A" , --10
+		DEF => "00" & X"B"   --11
+	);
+	CONSTANT ODDI_STAT : PK_STAT :=
+	(
+		TYP =>        "000", --PLANTA
+		HP  =>        X"2D", --45
+		ATT => "00" & X"E" , --14
+		DEF => "00" & X"F"   --16
+	);
+	CONSTANT LAPR_STAT : PK_STAT :=
+	(
+		TYP =>        "010", -- AGUA
+		HP  =>        X"82", --130
+		ATT => "00" & X"8" , --8
+		DEF => "00" & X"8"   --8
+	);
+	CONSTANT JOLT_STAT : PK_STAT :=
+	(
+		TYP =>        "001", --ELECTRICO
+		HP  =>        X"41", --65
+		ATT => "00" & X"7" , --7
+		DEF => "00" & X"6"   --6
+	);
+	CONSTANT GARC_STAT : PK_STAT :=
+	(
+		TYP =>        "011", --TIERRA
+		HP  =>        X"6C", --108
+		ATT => "00" & X"D" , --13
+		DEF => "00" & X"9"   --9
+	);
+	CONSTANT FLAR_STAT : PK_STAT :=
+	(
+		TYP =>        "100", --FUEGO
+		HP  =>        X"41", --65
+		ATT => "00" & X"D" , --13
+		DEF => "00" & X"6"   --6
+	);
+	CONSTANT CHAR_STAT : PK_STAT :=
+	(
+		TYP =>        "100", --FUEGO
+		HP  =>        X"4E", --78
+		ATT => "00" & X"8" , --8
+		DEF => "00" & X"7"   --7
+	);
+
 	PURE FUNCTION Slv2Int (INPUT : STD_LOGIC_VECTOR)
 	RETURN INTEGER;
 	

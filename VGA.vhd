@@ -21,7 +21,8 @@ ENTITY VGA IS
 		POKE1_SEL        : IN  UINT04;
 		POKE0_ENA        : IN  UINT01;
 		POKE1_ENA        : IN  UINT01;
-
+		P0_HP            : IN  UINT08;
+		P1_HP            : IN  UINT08;
 		GLOBAL_RST       : OUT UINT01;
 		VGA_CLK          : OUT UINT01;
 		R_VGA            : OUT UINT08;
@@ -43,6 +44,8 @@ SIGNAL S1_POS_X     : UINT11  ;
 SIGNAL S1_POS_Y     : UINT11  ;
 SIGNAL POS_X        : UINT11  ;
 SIGNAL POS_Y        : UINT11  ;
+SIGNAL P0_HP_INT    : INTEGER RANGE 0 TO 255;
+SIGNAL P1_HP_INT    : INTEGER RANGE 0 TO 255;
 BEGIN
 	
 	MOVE_CONT : ENTITY WORK.move_controller
@@ -50,7 +53,6 @@ BEGIN
 	(
 		CLK           => CLK_40MHz       ,
 		RST           => GLB_RST         ,
-	--	L_SIG         => LEFT_SIG        ,
 		STATE_CONT    => STATE_CONTROLLER,
 		PK0_MOV_CONT  => PK0_ANIM_SIG    ,
 		PK1_MOV_CONT  => PK1_ANIM_SIG    ,
@@ -59,9 +61,6 @@ BEGIN
 		SP1_X         => S1_POS_X        ,
 		SP1_Y         => S1_POS_Y  
 	);
-	
-	--S_POS_X <= VARP_X; --Int2Slv(300, 11);
-	--S_POS_Y <= VARP_Y; --Int2Slv(200, 11);
 	
 	GLOBAL_RST <= GLB_RST;
 	
@@ -104,6 +103,8 @@ BEGIN
 		POKEMON0_ENA  => POKE0_ENA,
 		POKEMON1_ENA  => POKE1_ENA,
 		VIDEO_ON      => VIDEO_ENA,
+		P0_HP         => P0_HP    ,
+		P1_HP         => P1_HP    ,
 		R             => R_VGA    ,
 		G             => G_VGA    ,
 		B             => B_VGA

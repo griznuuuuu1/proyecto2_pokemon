@@ -1,5 +1,5 @@
 Assembler report for POKEMON
-Wed Jun  3 23:43:33 2026
+Thu Jun  4 04:21:39 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Jun  3 23:43:33 2026 ;
+; Assembler Status      ; Successful - Thu Jun  4 04:21:39 2026 ;
 ; Revision Name         ; POKEMON                               ;
 ; Top-level Entity Name ; POKEMON                               ;
 ; Family                ; Cyclone V                             ;
@@ -67,8 +67,8 @@ on the Quartus Prime software download page.
 +----------------+----------------------+
 ; Option         ; Setting              ;
 +----------------+----------------------+
-; JTAG usercode  ; 0x03BD1796           ;
-; Checksum       ; 0x03BD1796           ;
+; JTAG usercode  ; 0x03C15487           ;
+; Checksum       ; 0x03C15487           ;
 +----------------+----------------------+
 
 
@@ -78,12 +78,12 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Wed Jun  3 23:43:26 2026
+    Info: Processing started: Thu Jun  4 04:21:32 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off POKEMON -c POKEMON
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 561 megabytes
-    Info: Processing ended: Wed Jun  3 23:43:33 2026
+    Info: Peak virtual memory: 549 megabytes
+    Info: Processing ended: Thu Jun  4 04:21:39 2026
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:07
 

@@ -15,6 +15,8 @@ ENTITY pixel_generate IS
 		SPRITE1_POS_Y : IN  UINT11  ;                --POSICION DE ESCANEO DEL PK1
 		POS_X         : IN  UINT11  ;                --POSICION DE ESCANEO DE PANTALLA
 		POS_Y         : IN  UINT11  ;                --POSICION DE ESCANEO DE PANTALLA
+		STATE_CONTR   : IN  UINT01  ;
+		TURN_DEF      : IN  UINT01  ;
 		PK0_SELECTOR  : IN  UINT04  ;
 		PK1_SELECTOR  : IN  UINT04  ;
 		POKEMON0_ENA  : IN  UINT01  ;
@@ -80,10 +82,19 @@ SIGNAL BAR1_VISIBLE : UINT01 := '0';
 SIGNAL P0_HP_INT    : INTEGER      ;
 SIGNAL P1_HP_INT    : INTEGER      ;
 
+SIGNAL TRIANGLE_X_BASE : INTEGER;
+SIGNAL TRIANGLE_Y_BASE : INTEGER;
+SIGNAL LOCAL_X_TRI     : INTEGER;
+SIGNAL LOCAL_Y_TRI     : INTEGER;
+SIGNAL TRIANGLE_ON     : UINT01;
+
+SIGNAL STATE_CONTR_INT_N : INTEGER;
+
 BEGIN --/////////////////////////////////////////////////////////////////////////////
 	
 	P0_HP_INT <= Slv2Int(P0_HP);
 	P1_HP_INT <= Slv2Int(P1_HP);
+	STATE_CONTR_INT_N <= 1 WHEN (STATE_CONTR = '0') ELSE 0;
 	
 	S_POS_X        <= Slv2Int(SPRITE0_POS_X); --POS DE PK0
 	S_POS_Y        <= Slv2Int(SPRITE0_POS_Y); --POS DE PK0
@@ -145,6 +156,8 @@ BEGIN --////////////////////////////////////////////////////////////////////////
 			MENU_Y1          <= Y_REG - MENU_P1_Y;
 			BG_X             <= X_REG / 5; 
 			BG_Y             <= Y_REG / 5;
+			LOCAL_X_TRI <= X_REG - TRIANGLE_X_BASE;
+			LOCAL_Y_TRI <= Y_REG - TRIANGLE_Y_BASE;
 			
 			--capa3
 			LOCAL_X_REG_PK0  <= LOCAL_X_PK0   ;
@@ -181,10 +194,6 @@ BEGIN --////////////////////////////////////////////////////////////////////////
 				ADDR_INT_PK1 <= (LOCAL_Y_REG_PK1 / 2) * 64 + (LOCAL_X_REG_PK1 / 2);
 			END IF;
 			
-
-
-
-
 			IF (MENU_X0_REG >= 0) AND (MENU_X0_REG < 512) AND 
 			   (MENU_Y0_REG >= 0) AND (MENU_Y0_REG < 704) THEN
 				
@@ -236,10 +245,12 @@ BEGIN --////////////////////////////////////////////////////////////////////////
 	                        MENU_Y1_REG2 <  (Slv2Int(PK1_SELECTOR) * 64) + 64) ELSE '0';
 	
 	MENU0_VISIBLE <= '1' WHEN (MENU_X0_REG2 >= 0 AND MENU_X0_REG2 < 512  AND 
-	                           MENU_Y0_REG2 >= 0 AND MENU_Y0_REG2 < 704) ELSE '0';
+	                           MENU_Y0_REG2 >= 0 AND MENU_Y0_REG2 < 704  AND
+	                           (STATE_CONTR_INT_N = 1)) ELSE '0';
 	
 	MENU1_VISIBLE <= '1' WHEN (MENU_X1_REG2 >= 0 AND MENU_X1_REG2 < 512  AND 
-	                           MENU_Y1_REG2 >= 0 AND MENU_Y1_REG2 < 704) ELSE '0';
+	                           MENU_Y1_REG2 >= 0 AND MENU_Y1_REG2 < 704  AND
+	                           (STATE_CONTR_INT_N = 1)) ELSE '0';
 	
 	
 	PK0_VISIBLE <= '1' WHEN (LOCAL_X_REG2_PK0 >= 0 AND LOCAL_X_REG2_PK0 < 128 AND
@@ -256,8 +267,24 @@ BEGIN --////////////////////////////////////////////////////////////////////////
 	BAR1_VISIBLE <= '1' WHEN (X_REG >= 480 AND X_REG < (480 + P1_HP_INT) AND
 	                          Y_REG >= 40  AND Y_REG < 52 AND POKEMON1_ENA = '1')
 	                    ELSE '0';
+	TRIANGLE_ON <= '1' WHEN (LOCAL_Y_TRI >= 0 AND LOCAL_Y_TRI < 16 AND
+	                         LOCAL_X_TRI >= (-15 + LOCAL_Y_TRI)    AND 
+	                         LOCAL_X_TRI <= (15 - LOCAL_Y_TRI)     AND
+	                         VIDEO_ON = '1') ELSE '0';
+
+	TRIANGLE_X_BASE <= (S_POS_X + 48) WHEN (STATE_CONTR = '0' AND TURN_DEF = '0') ELSE
+	                   (PK1_X + 48)   WHEN (STATE_CONTR = '0' AND TURN_DEF = '1') ELSE
+	                   (S_POS_X + 48) WHEN (STATE_CONTR = '1' AND TURN_DEF = '0') ELSE
+	                   (PK1_X + 48);
 	
-	PROCESS(CLK)
+	TRIANGLE_Y_BASE <= (S_POS_Y - 46) WHEN (STATE_CONTR = '0' AND TURN_DEF = '0') ELSE
+	                   (PK1_Y - 46) WHEN (STATE_CONTR = '0' AND TURN_DEF = '1') ELSE
+	                   (S_POS_Y - 46) WHEN (STATE_CONTR = '1' AND TURN_DEF = '0') ELSE
+	                   (PK1_Y - 46);
+
+
+
+PROCESS(CLK)
 	BEGIN
 		IF(RISING_EDGE(CLK)) THEN                            --RGB565!!!
 			R        <= X"00";
@@ -267,12 +294,17 @@ BEGIN --////////////////////////////////////////////////////////////////////////
 				R <= PIXEL_BG(15 DOWNTO 11) & "000";
 				G <= PIXEL_BG(10 DOWNTO  5) &  "00";
 				B <= PIXEL_BG( 4 DOWNTO  0) & "000";
+				IF (TRIANGLE_ON = '1') THEN
+					R <= X"FF";
+					G <= X"D7";
+					B <= X"00";
+				END IF;
 				IF (POKEMON0_ENA = '0' AND MENU0_VISIBLE = '1' AND
 				    PIXEL_MENU /= X"FFFF" AND PIXEL_MENU /= X"0000") THEN
 					IF (CURSOR0_ON = '1') THEN
-						R <= X"FF"; 
+						R <= X"20"; 
 						G <= X"20";
-						B <= X"20";
+						B <= X"FF";
 					ELSE
 						R <= PIXEL_MENU(15 DOWNTO 11) & "000";
 						G <= PIXEL_MENU(10 DOWNTO  5) &  "00";
@@ -282,8 +314,8 @@ BEGIN --////////////////////////////////////////////////////////////////////////
 				       PIXEL_MENU /= X"FFFF" AND PIXEL_MENU /= X"0000") THEN
 					IF (CURSOR1_ON = '1') THEN
 						R <= X"20"; 
-						G <= X"FF";
-						B <= X"20";
+						G <= X"20";
+						B <= X"FF";
 					ELSE
 						R <= PIXEL_MENU(15 DOWNTO 11) & "000";
 						G <= PIXEL_MENU(10 DOWNTO  5) &  "00";

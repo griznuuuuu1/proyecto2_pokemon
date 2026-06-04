@@ -76,6 +76,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "B_VGA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_VGA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_VGA[2]",
+					"strict" : false
+				},
+				{
 					"name" : "B_VGA[3]",
 					"strict" : false
 				},

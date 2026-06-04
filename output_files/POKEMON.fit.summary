@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Jun  3 23:43:23 2026
+Fitter Status : Successful - Thu Jun  4 04:21:29 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : POKEMON
 Top-level Entity Name : POKEMON
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1,116 / 32,070 ( 3 % )
-Total registers : 973
+Logic utilization (in ALMs) : 1,278 / 32,070 ( 4 % )
+Total registers : 1031
 Total pins : 34 / 457 ( 7 % )
 Total virtual pins : 0
 Total block memory bits : 1,769,472 / 4,065,280 ( 44 % )

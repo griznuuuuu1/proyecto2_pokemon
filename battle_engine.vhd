@@ -79,6 +79,7 @@ SIGNAL CURSOR0_STATS    : PK_STAT       ;
 SIGNAL CURSOR1_STATS    : PK_STAT       ;
 SIGNAL P0_ATT_MOD       : UINT05        ;
 SIGNAL P1_ATT_MOD       : UINT05        ;
+CONSTANT EXTRA_DMG_INT    : INTEGER := 15 ;
 SIGNAL DAMAGE_FINAL     : INTEGER RANGE 0 TO 63;
 --RECUERDA QUE LA DEFINICION DE LAS ESTADISTICAS DE CADA POKEMON ESTA EN BASICK_PACKAGE.VHD !!!!!!!!!!!
 --TYP => "000", "001", "010", "011", "100"
@@ -90,6 +91,9 @@ SIGNAL DAMAGE_FINAL     : INTEGER RANGE 0 TO 63;
 --AGUA > FGO , TERR
 --TERR > ELEC, FGO
 --FGO  > ELEC, PLT
+
+ATTRIBUTE SYN_ENCODING : STRING;
+ATTRIBUTE SYN_ENCODING OF CURRENT_ST : SIGNAL IS "safe, default";
 
 BEGIN
 	
@@ -250,15 +254,15 @@ BEGIN
 
         CASE ATK_TYP IS
             WHEN TYP_FGO =>
-                IF (DEF_TYP = TYP_ELEC OR DEF_TYP = TYP_PLT) THEN DAMAGE_TMP := BASE_ATK + 5; END IF;
+                IF (DEF_TYP = TYP_ELEC OR DEF_TYP = TYP_PLT) THEN DAMAGE_TMP := BASE_ATK + EXTRA_DMG_INT; END IF;
             WHEN TYP_ELEC =>
-                IF (DEF_TYP = TYP_AGUA OR DEF_TYP = TYP_PLT) THEN DAMAGE_TMP := BASE_ATK + 5; END IF;
+                IF (DEF_TYP = TYP_AGUA OR DEF_TYP = TYP_PLT) THEN DAMAGE_TMP := BASE_ATK + EXTRA_DMG_INT; END IF;
             WHEN TYP_AGUA =>
-                IF (DEF_TYP = TYP_FGO OR DEF_TYP = TYP_TERR) THEN DAMAGE_TMP := BASE_ATK + 5; END IF;
+                IF (DEF_TYP = TYP_FGO OR DEF_TYP = TYP_TERR) THEN DAMAGE_TMP := BASE_ATK + EXTRA_DMG_INT; END IF;
             WHEN TYP_TERR =>
-                IF (DEF_TYP = TYP_FGO OR DEF_TYP = TYP_ELEC) THEN DAMAGE_TMP := BASE_ATK + 5; END IF;
+                IF (DEF_TYP = TYP_FGO OR DEF_TYP = TYP_ELEC) THEN DAMAGE_TMP := BASE_ATK + EXTRA_DMG_INT; END IF;
             WHEN TYP_PLT =>
-                IF (DEF_TYP = TYP_AGUA OR DEF_TYP = TYP_TERR) THEN DAMAGE_TMP := BASE_ATK + 5; END IF;
+                IF (DEF_TYP = TYP_AGUA OR DEF_TYP = TYP_TERR) THEN DAMAGE_TMP := BASE_ATK + EXTRA_DMG_INT; END IF;
             WHEN OTHERS =>
                 DAMAGE_TMP := BASE_ATK;
         END CASE;
@@ -397,17 +401,25 @@ BEGIN
 					P1_READY        <= '0';
 					PK0_HIT_SIG     <= '1';
 					PK1_HIT_SIG     <= '1';
+					STATE_CONTROL   <= '1';
 					IF (S_SIG = '1') THEN
 						IF(MISS_ATK = '0') THEN
 							PK1_HIT_SIG <= '0'; --ANIMACION DE GOLPE
-							P1_STATS.HP <= Int2Slv(Slv2Int(P1_STATS.HP) - DAMAGE_FINAL,8);
+							IF (DAMAGE_FINAL > Slv2Int(P1_STATS.HP)) THEN
+								PK1_ENA <= '0';
+								CURRENT_ST <= ST_GAME_OVER;
+							ELSE
+								P1_STATS.HP <= Int2Slv(Slv2Int(P1_STATS.HP) - DAMAGE_FINAL,8);
+								CURRENT_ST <= ST_WAIT_T_P0;
+							END IF;
 						ELSE
 							PK1_HIT_SIG <= '1'; --GOLPE FALLO
+							CURRENT_ST <= ST_WAIT_T_P0;
 						END IF;
-						CURRENT_ST  <= ST_WAIT_T_P0;
 					END IF;
 				
 				WHEN ST_WAIT_T_P0 =>
+					STATE_CONTROL <= '1';
 					PK0_HIT_SIG <= '1';
 					IF (S_SIG = '1') THEN
 						PK1_HIT_SIG <= '0';
@@ -415,6 +427,7 @@ BEGIN
 					END IF;
 				
 				WHEN ST_TURN_P1 =>
+					STATE_CONTROL   <= '1';
 					TURN_CONTROLLER <= '1';
 					P0_READY        <= '0';
 					P1_READY        <= '1';
@@ -423,19 +436,29 @@ BEGIN
 					IF (S_SIG = '1') THEN
 						IF (MISS_ATK = '0') THEN
 							PK0_HIT_SIG <= '0';
-							P0_STATS.HP <= Int2Slv(Slv2Int(P0_STATS.HP) - DAMAGE_FINAL,8);
+							IF (DAMAGE_FINAL > Slv2Int(P0_STATS.HP)) THEN
+								PK0_ENA <= '0';
+								CURRENT_ST <= ST_GAME_OVER;
+							ELSE
+								P0_STATS.HP <= Int2Slv(Slv2Int(P0_STATS.HP) - DAMAGE_FINAL,8);
+								CURRENT_ST <= ST_WAIT_T_P1;
+							END IF;
 						ELSE
 							PK0_HIT_SIG <= '1';
+							CURRENT_ST <= ST_WAIT_T_P1;
 						END IF;
-						CURRENT_ST <= ST_WAIT_T_P1;
 					END IF;
 				
 				WHEN ST_WAIT_T_P1 =>
+					STATE_CONTROL <= '1';
 					PK1_HIT_SIG <= '1';
 					IF (S_SIG = '1') THEN
 						PK0_HIT_SIG <= '1';
 						CURRENT_ST <= ST_TURN_P0;
 					END IF;
+				
+				WHEN ST_GAME_OVER =>
+					CURRENT_ST <= ST_GAME_OVER;
 				
 				WHEN OTHERS =>
 					CURRENT_ST <= ST_SEL_P0;

@@ -1,5 +1,5 @@
 Flow report for POKEMON
-Wed Jun  3 23:43:46 2026
+Thu Jun  4 04:25:08 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -41,25 +41,25 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Jun  3 23:43:46 2026           ;
+; Flow Status                     ; Successful - Thu Jun  4 04:25:08 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; POKEMON                                         ;
 ; Top-level Entity Name           ; POKEMON                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 1,116 / 32,070 ( 3 % )                          ;
-; Total registers                 ; 973                                             ;
-; Total pins                      ; 34 / 457 ( 7 % )                                ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 1004                                            ;
+; Total pins                      ; 34                                              ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 1,769,472 / 4,065,280 ( 44 % )                  ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
+; Total block memory bits         ; 1,769,472                                       ;
+; Total DSP Blocks                ; 0                                               ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
 ; Total HSSI TX PCSs              ; 0                                               ;
 ; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 1 / 6 ( 17 % )                                  ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
+; Total PLLs                      ; 1                                               ;
+; Total DLLs                      ; 0                                               ;
 +---------------------------------+-------------------------------------------------+
 
 
@@ -68,7 +68,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/03/2026 23:42:11 ;
+; Start date & time ; 06/04/2026 04:24:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; POKEMON             ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 238561866642540.178054813150322        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 238561866642540.178056508938805        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -111,12 +111,8 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 582 MB              ; 00:00:29                           ;
-; Fitter               ; 00:00:53     ; 1.3                     ; 1972 MB             ; 00:02:03                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 561 MB              ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:09     ; 2.3                     ; 957 MB              ; 00:00:19                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 809 MB              ; 00:00:01                           ;
-; Total                ; 00:01:27     ; --                      ; --                  ; 00:02:59                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 585 MB              ; 00:00:32                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -126,10 +122,6 @@ on the Quartus Prime software download page.
 ; Module Name          ; Machine Hostname          ; OS Name    ; OS Version ; Processor type ;
 +----------------------+---------------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; nabuchadnezzar.frr.net.co ; Arch Linux ; Arch Linux ; x86_64         ;
-; Fitter               ; nabuchadnezzar.frr.net.co ; Arch Linux ; Arch Linux ; x86_64         ;
-; Assembler            ; nabuchadnezzar.frr.net.co ; Arch Linux ; Arch Linux ; x86_64         ;
-; Timing Analyzer      ; nabuchadnezzar.frr.net.co ; Arch Linux ; Arch Linux ; x86_64         ;
-; EDA Netlist Writer   ; nabuchadnezzar.frr.net.co ; Arch Linux ; Arch Linux ; x86_64         ;
 +----------------------+---------------------------+------------+------------+----------------+
 
 
@@ -137,10 +129,6 @@ on the Quartus Prime software download page.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off POKEMON -c POKEMON
-quartus_fit --read_settings_files=off --write_settings_files=off POKEMON -c POKEMON
-quartus_asm --read_settings_files=off --write_settings_files=off POKEMON -c POKEMON
-quartus_sta POKEMON -c POKEMON
-quartus_eda --read_settings_files=off --write_settings_files=off POKEMON -c POKEMON
 
 
 

@@ -12,9 +12,8 @@ ENTITY VGA IS
 	(
 		CLK              : IN  UINT01;
 		VGA_RST          : IN  UINT01;
---		LEFT_SIG         : IN  UINT01;
 		STATE_CONTROLLER : IN  UINT01;
-
+		TURN_DEF         : IN  UINT01;
 		PK0_ANIM_SIG     : IN  UINT01;
 		PK1_ANIM_SIG     : IN  UINT01;
 		POKE0_SEL        : IN  UINT04;
@@ -98,6 +97,8 @@ BEGIN
 		SPRITE1_POS_Y => S1_POS_Y ,
 		POS_X         => POS_X    ,
 		POS_Y         => POS_Y    ,
+		STATE_CONTR   => STATE_CONTROLLER,
+		TURN_DEF      => TURN_DEF ,
 		PK0_SELECTOR  => POKE0_SEL,
 		PK1_SELECTOR  => POKE1_SEL,
 		POKEMON0_ENA  => POKE0_ENA,

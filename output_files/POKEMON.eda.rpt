@@ -1,5 +1,5 @@
 EDA Netlist Writer report for POKEMON
-Wed Jun  3 23:43:46 2026
+Thu Jun  4 04:21:53 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Jun  3 23:43:46 2026 ;
+; EDA Netlist Writer Status ; Successful - Thu Jun  4 04:21:53 2026 ;
 ; Revision Name             ; POKEMON                               ;
 ; Top-level Entity Name     ; POKEMON                               ;
 ; Family                    ; Cyclone V                             ;
@@ -81,13 +81,13 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Wed Jun  3 23:43:45 2026
+    Info: Processing started: Thu Jun  4 04:21:51 2026
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off POKEMON -c POKEMON
 Info (204019): Generated file POKEMON.vo in folder "/home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 809 megabytes
-    Info: Processing ended: Wed Jun  3 23:43:46 2026
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Thu Jun  4 04:21:53 2026
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

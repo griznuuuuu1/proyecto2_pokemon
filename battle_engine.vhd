@@ -271,9 +271,9 @@ BEGIN
         -- 4. Restarle la defensa del oponente (Daño Final = Ataque calculado - Defensa)
         -- Protegemos que el daño no sea negativo (si la defensa es mayor al ataque)
         IF (DAMAGE_TMP > DEF_DEF) THEN
-            DAMAGE_FINAL <= DAMAGE_TMP - DEF_DEF;
+            DAMAGE_FINAL <= (DAMAGE_TMP - DEF_DEF) + 15;
         ELSE
-            DAMAGE_FINAL <= 1; -- Daño mínimo de 1 para que los golpes siempre hagan algo
+            DAMAGE_FINAL <= 10; -- Daño mínimo de 1 para que los golpes siempre hagan algo
         END IF;
 
     END PROCESS;
@@ -321,10 +321,14 @@ BEGIN
 	BEGIN
 		IF PLAYER_RAND_NUM > Int2Slv(5, 4) THEN
 			MISS_ATK <= '0';
-			--IF PLAYER_RAND_NUM > Int2Slv(12, 4) THEN
-			--END IF;
+			IF PLAYER_RAND_NUM > Int2Slv(12, 4) THEN
+				CRIT_FLAG <= '1';
+			ELSE
+				CRIT_FLAG <= '0';
+			END IF;
 		ELSE
-			MISS_ATK <= '1';
+			MISS_ATK  <= '1';
+			CRIT_FLAG <= '0';
 		END IF;
 	END PROCESS;
 

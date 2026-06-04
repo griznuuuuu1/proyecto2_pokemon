@@ -3,11 +3,11 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -26.500
-TNS   : -393.345
+Slack : -26.173
+TNS   : -384.251
 
 Type  : Slow 1100mV 85C Model Hold 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.334
+Slack : 0.361
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -19,15 +19,15 @@ Slack : 9.900
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 11.259
+Slack : 11.260
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -27.624
-TNS   : -410.072
+Slack : -27.406
+TNS   : -401.401
 
 Type  : Slow 1100mV 0C Model Hold 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.311
+Slack : 0.359
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -39,15 +39,15 @@ Slack : 9.926
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 11.238
+Slack : 11.235
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -3.716
-TNS   : -51.244
+Slack : -3.131
+TNS   : -45.820
 
 Type  : Fast 1100mV 85C Model Hold 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.178
+Slack : 0.177
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -63,11 +63,11 @@ Slack : 11.380
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -2.073
-TNS   : -27.349
+Slack : -1.611
+TNS   : -22.365
 
 Type  : Fast 1100mV 0C Model Hold 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.169
+Slack : 0.168
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'IMAGE_CONTROL|CLOCK_BLOCK|pll_40mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'

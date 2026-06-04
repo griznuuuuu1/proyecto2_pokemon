@@ -1,5 +1,5 @@
 Flow report for POKEMON
-Wed Jun  3 23:02:47 2026
+Wed Jun  3 23:43:46 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -41,15 +41,15 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Jun  3 23:02:47 2026           ;
+; Flow Status                     ; Successful - Wed Jun  3 23:43:46 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; POKEMON                                         ;
 ; Top-level Entity Name           ; POKEMON                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 1,113 / 32,070 ( 3 % )                          ;
-; Total registers                 ; 969                                             ;
+; Logic utilization (in ALMs)     ; 1,116 / 32,070 ( 3 % )                          ;
+; Total registers                 ; 973                                             ;
 ; Total pins                      ; 34 / 457 ( 7 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 1,769,472 / 4,065,280 ( 44 % )                  ;
@@ -68,7 +68,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/03/2026 23:01:13 ;
+; Start date & time ; 06/03/2026 23:42:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; POKEMON             ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 238561866642540.178054567341933        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 238561866642540.178054813150322        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -111,12 +111,12 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 579 MB              ; 00:00:29                           ;
-; Fitter               ; 00:00:52     ; 1.3                     ; 1970 MB             ; 00:01:58                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 557 MB              ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:10     ; 2.3                     ; 924 MB              ; 00:00:19                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 809 MB              ; 00:00:01                           ;
-; Total                ; 00:01:28     ; --                      ; --                  ; 00:02:54                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 582 MB              ; 00:00:29                           ;
+; Fitter               ; 00:00:53     ; 1.3                     ; 1972 MB             ; 00:02:03                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 561 MB              ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:09     ; 2.3                     ; 957 MB              ; 00:00:19                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 809 MB              ; 00:00:01                           ;
+; Total                ; 00:01:27     ; --                      ; --                  ; 00:02:59                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

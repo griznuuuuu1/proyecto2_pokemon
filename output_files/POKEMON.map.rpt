@@ -1,5 +1,5 @@
 Analysis & Synthesis report for POKEMON
-Wed Jun  3 23:01:31 2026
+Wed Jun  3 23:42:29 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -103,13 +103,13 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jun  3 23:01:31 2026           ;
+; Analysis & Synthesis Status     ; Successful - Wed Jun  3 23:42:29 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; POKEMON                                         ;
 ; Top-level Entity Name           ; POKEMON                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 935                                             ;
+; Total registers                 ; 936                                             ;
 ; Total pins                      ; 34                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 1,769,472                                       ;
@@ -224,7 +224,7 @@ on the Quartus Prime software download page.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -316,16 +316,16 @@ on the Quartus Prime software download page.
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                        ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1158                                                                                                         ;
+; Estimate of Logic utilization (ALMs needed) ; 1162                                                                                                         ;
 ;                                             ;                                                                                                              ;
-; Combinational ALUT usage for logic          ; 2020                                                                                                         ;
-;     -- 7 input functions                    ; 0                                                                                                            ;
-;     -- 6 input functions                    ; 219                                                                                                          ;
-;     -- 5 input functions                    ; 432                                                                                                          ;
-;     -- 4 input functions                    ; 378                                                                                                          ;
-;     -- <=3 input functions                  ; 991                                                                                                          ;
+; Combinational ALUT usage for logic          ; 2026                                                                                                         ;
+;     -- 7 input functions                    ; 1                                                                                                            ;
+;     -- 6 input functions                    ; 220                                                                                                          ;
+;     -- 5 input functions                    ; 428                                                                                                          ;
+;     -- 4 input functions                    ; 363                                                                                                          ;
+;     -- <=3 input functions                  ; 1014                                                                                                         ;
 ;                                             ;                                                                                                              ;
-; Dedicated logic registers                   ; 935                                                                                                          ;
+; Dedicated logic registers                   ; 936                                                                                                          ;
 ;                                             ;                                                                                                              ;
 ; I/O pins                                    ; 34                                                                                                           ;
 ; Total MLAB memory bits                      ; 0                                                                                                            ;
@@ -337,9 +337,9 @@ on the Quartus Prime software download page.
 ;     -- PLLs                                 ; 1                                                                                                            ;
 ;                                             ;                                                                                                              ;
 ; Maximum fan-out node                        ; VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 1284                                                                                                         ;
-; Total fan-out                               ; 15884                                                                                                        ;
-; Average fan-out                             ; 4.77                                                                                                         ;
+; Maximum fan-out                             ; 1285                                                                                                         ;
+; Total fan-out                               ; 15889                                                                                                        ;
+; Average fan-out                             ; 4.76                                                                                                         ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------------------+
 
 
@@ -348,7 +348,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                      ; Entity Name     ; Library Name ;
 +-----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |POKEMON                                                  ; 2020 (1)            ; 935 (0)                   ; 1769472           ; 0          ; 34   ; 0            ; |POKEMON                                                                                                                                                                 ; POKEMON         ; work         ;
+; |POKEMON                                                  ; 2026 (1)            ; 936 (0)                   ; 1769472           ; 0          ; 34   ; 0            ; |POKEMON                                                                                                                                                                 ; POKEMON         ; work         ;
 ;    |VGA:IMAGE_CONTROL|                                    ; 1856 (1)            ; 852 (0)                   ; 1769472           ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL                                                                                                                                               ; VGA             ; work         ;
 ;       |PLL_40MHz:CLOCK_BLOCK|                             ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK                                                                                                                         ; PLL_40MHz       ; pll_40mhz    ;
 ;          |PLL_40MHz_0002:pll_40mhz_inst|                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|PLL_40MHz:CLOCK_BLOCK|PLL_40MHz_0002:pll_40mhz_inst                                                                                           ; PLL_40MHz_0002  ; PLL_40MHz    ;
@@ -429,7 +429,7 @@ on the Quartus Prime software download page.
 ;             |ZERAORA_ROM:ZERAORA_SP|                      ; 0 (0)               ; 0 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP                                                                          ; ZERAORA_ROM     ; work         ;
 ;                |altsyncram:altsyncram_component|          ; 0 (0)               ; 0 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component                                          ; altsyncram      ; work         ;
 ;                   |altsyncram_v224:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|ZERAORA_ROM:ZERAORA_SP|altsyncram:altsyncram_component|altsyncram_v224:auto_generated           ; altsyncram_v224 ; work         ;
-;    |battle_engine:GAME_CONTROL|                           ; 163 (157)           ; 83 (79)                   ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|battle_engine:GAME_CONTROL                                                                                                                                      ; battle_engine   ; work         ;
+;    |battle_engine:GAME_CONTROL|                           ; 169 (163)           ; 84 (80)                   ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|battle_engine:GAME_CONTROL                                                                                                                                      ; battle_engine   ; work         ;
 ;       |bitn_fullAdder:PK0_CURSOR_SUM|                     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM                                                                                                        ; bitn_fullAdder  ; work         ;
 ;          |bit1_fullAdder:fullAdder0|                      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM|bit1_fullAdder:fullAdder0                                                                              ; bit1_fullAdder  ; work         ;
 ;       |bitn_fullAdder:PK1_CURSOR_SUM|                     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |POKEMON|battle_engine:GAME_CONTROL|bitn_fullAdder:PK1_CURSOR_SUM                                                                                                        ; bitn_fullAdder  ; work         ;
@@ -629,7 +629,6 @@ Encoding Type:  One-Hot
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_X[0]              ; Stuck at GND due to stuck port data_in                                    ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP0_Y[0]              ; Stuck at GND due to stuck port data_in                                    ;
 ; VGA:IMAGE_CONTROL|move_controller:MOVE_CONT|VARP1_X[0]              ; Stuck at GND due to stuck port data_in                                    ;
-; battle_engine:GAME_CONTROL|PLAYER_RAND_NUM[0]                       ; Lost fanout                                                               ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG2[3..8]     ; Lost fanout                                                               ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y0_REG2[0..5]     ; Lost fanout                                                               ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG2_PK1[0..6] ; Lost fanout                                                               ;
@@ -647,7 +646,7 @@ Encoding Type:  One-Hot
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[1]         ; Lost fanout                                                               ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1[1]             ; Lost fanout                                                               ;
 ; battle_engine:GAME_CONTROL|CURRENT_ST.ST_GAME_OVER                  ; Stuck at GND due to stuck port data_in                                    ;
-; Total Number of Removed Registers = 257                             ;                                                                           ;
+; Total Number of Removed Registers = 256                             ;                                                                           ;
 +---------------------------------------------------------------------+---------------------------------------------------------------------------+
 
 
@@ -676,12 +675,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 935   ;
+; Total registers                              ; 936   ;
 ; Number of registers using Synchronous Clear  ; 119   ;
 ; Number of registers using Synchronous Load   ; 31    ;
-; Number of registers using Asynchronous Clear ; 137   ;
+; Number of registers using Asynchronous Clear ; 138   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 105   ;
+; Number of registers using Clock Enable       ; 106   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -716,8 +715,8 @@ Encoding Type:  One-Hot
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG2_PK1[31] ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG2_PK1[31] ; 1       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG2[31]     ; 1       ;
-; battle_engine:GAME_CONTROL|PLAYER_RAND_NUM[2]                     ; 1       ;
-; battle_engine:GAME_CONTROL|PLAYER_RAND_NUM[1]                     ; 1       ;
+; battle_engine:GAME_CONTROL|PLAYER_RAND_NUM[2]                     ; 2       ;
+; battle_engine:GAME_CONTROL|PLAYER_RAND_NUM[1]                     ; 2       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_Y1_REG[31]      ; 2       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X0_REG[31]      ; 2       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG_PK0[31]  ; 3       ;
@@ -725,18 +724,18 @@ Encoding Type:  One-Hot
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_Y_REG_PK1[31]  ; 3       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|LOCAL_X_REG_PK1[31]  ; 3       ;
 ; VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|MENU_X1_REG[31]      ; 2       ;
-; battle_engine:GAME_CONTROL|P1_STATS.ATT[4]                        ; 2       ;
+; battle_engine:GAME_CONTROL|P0_STATS.TYP[2]                        ; 4       ;
+; battle_engine:GAME_CONTROL|P1_STATS.TYP[2]                        ; 4       ;
 ; battle_engine:GAME_CONTROL|P0_STATS.ATT[4]                        ; 2       ;
+; battle_engine:GAME_CONTROL|P1_STATS.ATT[4]                        ; 2       ;
 ; battle_engine:GAME_CONTROL|P0_STATS.ATT[1]                        ; 1       ;
 ; battle_engine:GAME_CONTROL|P1_STATS.ATT[1]                        ; 1       ;
 ; battle_engine:GAME_CONTROL|P0_STATS.ATT[0]                        ; 1       ;
 ; battle_engine:GAME_CONTROL|P1_STATS.ATT[0]                        ; 1       ;
 ; battle_engine:GAME_CONTROL|P0_STATS.ATT[2]                        ; 1       ;
 ; battle_engine:GAME_CONTROL|P1_STATS.ATT[2]                        ; 1       ;
-; battle_engine:GAME_CONTROL|P0_STATS.ATT[3]                        ; 1       ;
-; battle_engine:GAME_CONTROL|P1_STATS.ATT[3]                        ; 1       ;
-; battle_engine:GAME_CONTROL|P0_STATS.TYP[2]                        ; 3       ;
-; battle_engine:GAME_CONTROL|P1_STATS.TYP[2]                        ; 3       ;
+; battle_engine:GAME_CONTROL|P0_STATS.ATT[3]                        ; 2       ;
+; battle_engine:GAME_CONTROL|P1_STATS.ATT[3]                        ; 2       ;
 ; battle_engine:GAME_CONTROL|P1_STATS.DEF[3]                        ; 1       ;
 ; battle_engine:GAME_CONTROL|P0_STATS.DEF[3]                        ; 1       ;
 ; battle_engine:GAME_CONTROL|P1_STATS.DEF[2]                        ; 1       ;
@@ -765,27 +764,27 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER|temp[1]                                                                                            ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|ADDR_INT_MENU[2]                                                                                                     ;
-; 13:1               ; 7 bits    ; 56 LEs        ; 49 LEs               ; 7 LEs                  ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|R[5]                                                                                                                 ;
-; 13:1               ; 9 bits    ; 72 LEs        ; 63 LEs               ; 9 LEs                  ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|G[3]                                                                                                                 ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |POKEMON|battle_engine:GAME_CONTROL|P1_STATS.HP[4]                                                                                                                         ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |POKEMON|battle_engine:GAME_CONTROL|P0_STATS.HP[0]                                                                                                                         ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_cn34:auto_generated|mux_7hb:mux2|l2_w6_n0_mux_dataout ;
-; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux131                                                                                            ;
-; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux278                                                                                            ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux146                                                                                            ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux280                                                                                            ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 4 LEs                ; 28 LEs                 ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Mux58                                                                                                                                  ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 2 LEs                ; 14 LEs                 ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Mux53                                                                                                                                  ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Selector15                                                                                                                             ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Selector11                                                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|image_sync:SYNC_BLOCK|contador_uni:V_COUNTER|temp[3]                                                                                             ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|ADDR_INT_MENU[6]                                                                                                      ;
+; 13:1               ; 7 bits    ; 56 LEs        ; 49 LEs               ; 7 LEs                  ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|B[5]                                                                                                                  ;
+; 13:1               ; 9 bits    ; 72 LEs        ; 63 LEs               ; 9 LEs                  ; Yes        ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|G[2]                                                                                                                  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |POKEMON|battle_engine:GAME_CONTROL|P1_STATS.HP[6]                                                                                                                          ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |POKEMON|battle_engine:GAME_CONTROL|P0_STATS.HP[3]                                                                                                                          ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_cn34:auto_generated|mux_7hb:mux2|l2_w11_n0_mux_dataout ;
+; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux130                                                                                             ;
+; 8:1                ; 12 bits   ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux272                                                                                             ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux132                                                                                             ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |POKEMON|VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|pokemon_sel:PK_SEL|Mux280                                                                                             ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 4 LEs                ; 28 LEs                 ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Mux56                                                                                                                                   ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 2 LEs                ; 14 LEs                 ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Mux53                                                                                                                                   ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Selector15                                                                                                                              ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |POKEMON|battle_engine:GAME_CONTROL|Selector11                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2404,32 +2403,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 935                         ;
+; arriav_ff             ; 936                         ;
 ;     CLR               ; 17                          ;
 ;     CLR SCLR          ; 55                          ;
 ;     ENA               ; 40                          ;
-;     ENA CLR           ; 38                          ;
+;     ENA CLR           ; 39                          ;
 ;     ENA CLR SCLR      ; 11                          ;
 ;     ENA CLR SLD       ; 16                          ;
 ;     SCLR              ; 53                          ;
 ;     SLD               ; 15                          ;
 ;     plain             ; 690                         ;
-; arriav_lcell_comb     ; 2020                        ;
-;     arith             ; 631                         ;
-;         0 data inputs ; 125                         ;
+; arriav_lcell_comb     ; 2026                        ;
+;     arith             ; 630                         ;
+;         0 data inputs ; 124                         ;
 ;         1 data inputs ; 285                         ;
 ;         2 data inputs ; 27                          ;
 ;         3 data inputs ; 62                          ;
-;         4 data inputs ; 114                         ;
-;         5 data inputs ; 18                          ;
-;     normal            ; 1225                        ;
+;         4 data inputs ; 115                         ;
+;         5 data inputs ; 17                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 1231                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 52                          ;
-;         2 data inputs ; 210                         ;
-;         3 data inputs ; 65                          ;
-;         4 data inputs ; 264                         ;
-;         5 data inputs ; 414                         ;
-;         6 data inputs ; 219                         ;
+;         2 data inputs ; 213                         ;
+;         3 data inputs ; 86                          ;
+;         4 data inputs ; 248                         ;
+;         5 data inputs ; 411                         ;
+;         6 data inputs ; 220                         ;
 ;     shared            ; 164                         ;
 ;         0 data inputs ; 81                          ;
 ;         1 data inputs ; 22                          ;
@@ -2440,7 +2441,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 304                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 73.40                       ;
-; Average LUT depth     ; 19.63                       ;
+; Average LUT depth     ; 19.60                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2459,7 +2460,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Wed Jun  3 23:01:13 2026
+    Info: Processing started: Wed Jun  3 23:42:11 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off POKEMON -c POKEMON
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 0 entities, in source file basic_package.vhd
@@ -3366,7 +3367,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_cn34 File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/db/altsyncram_cn34.tdf Line: 32
 Info (12128): Elaborating entity "altsyncram_cn34" for hierarchy "VGA:IMAGE_CONTROL|pixel_generate:COLOR_BLOCK|NAMES_ROM:TILES_ROM|altsyncram:altsyncram_component|altsyncram_cn34:auto_generated" File: /opt/intelFPGA/25.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "battle_engine" for hierarchy "battle_engine:GAME_CONTROL" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 70
-Warning (10541): VHDL Signal Declaration warning at battle_engine.vhd(73): used implicit default value for signal "CRIT_FLAG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/battle_engine.vhd Line: 73
 Info (12128): Elaborating entity "bitn_fullAdder" for hierarchy "battle_engine:GAME_CONTROL|bitn_fullAdder:PK0_CURSOR_SUM" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/battle_engine.vhd Line: 135
 Info (12128): Elaborating entity "contador_uni" for hierarchy "battle_engine:GAME_CONTROL|contador_uni:RANDOM_COUNTER" File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/battle_engine.vhd Line: 282
 Info (278001): Inferred 2 megafunctions from design logic
@@ -3401,18 +3401,18 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "B_VGA[1]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 23
     Warning (13410): Pin "B_VGA[2]" is stuck at GND File: /home/griznu1_/Nextcloud/ERR/UNI/5semestre/digitales/2proyecto/codigo/POKEMON.vhd Line: 23
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 58 registers lost all their fanouts during netlist optimizations.
+Info (17049): 57 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 7 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2810 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2817 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 2471 logic cells
+    Info (21061): Implemented 2478 logic cells
     Info (21064): Implemented 304 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 582 megabytes
-    Info: Processing ended: Wed Jun  3 23:01:31 2026
+    Info: Processing ended: Wed Jun  3 23:42:29 2026
     Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:30
 
